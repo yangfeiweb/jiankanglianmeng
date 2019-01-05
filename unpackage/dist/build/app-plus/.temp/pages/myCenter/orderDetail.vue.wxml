@@ -1,0 +1,92 @@
+<template name="638d34df">
+  <view class="_view data-v-0bd6da1a content">
+    <view class="_view data-v-0bd6da1a status">
+      <view class="_view data-v-0bd6da1a orderImg">
+        <image src="../../static/orderImg.png" mode class="_image data-v-0bd6da1a"></image>
+      </view>
+      <view class="_view data-v-0bd6da1a orderCar">
+        <image src="../../static/shopCar.png" mode class="_image data-v-0bd6da1a"></image>
+        <text class="_text data-v-0bd6da1a">快递已签收，感谢您在健康联盟购物，期待您的下次购买！</text>
+      </view>
+    </view>
+    <view class="_view data-v-0bd6da1a map">
+      <view class="_view data-v-0bd6da1a mapImg">
+        <image src="../../static/map.png" mode class="_image data-v-0bd6da1a"></image>
+      </view>
+      <view class="_view data-v-0bd6da1a userInfo">
+        <text class="_text data-v-0bd6da1a">张三</text>
+        <text class="_text data-v-0bd6da1a">15888888888</text>
+        <view class="_view data-v-0bd6da1a"> 河南省郑州市郑东新区中州大道与商都路交汇处东500米路南 </view>
+      </view>
+    </view>
+    <view class="_view data-v-0bd6da1a goodsList">
+      <navigator url class="_navigator data-v-0bd6da1a store">
+        <view class="_view data-v-0bd6da1a icons">
+          <image src="../../static/store.png" mode class="_image data-v-0bd6da1a"></image>
+          <text class="_text data-v-0bd6da1a">一叶子官方旗舰店</text>
+        </view>
+      </navigator>
+      <navigator class="_navigator data-v-0bd6da1a goodsInfo">
+        <view class="_view data-v-0bd6da1a goodsImg">
+          <image src="../../static/photo.png" mode class="_image data-v-0bd6da1a"></image>
+        </view>
+        <view class="_view data-v-0bd6da1a rightGoods">
+          <view class="_view data-v-0bd6da1a goodsDetail">
+            <view class="_view data-v-0bd6da1a referral"> Swisse奶蓟草护肝片澳洲进口保健品护 肝解毒片保健品护保健品护保健品护 </view>
+            <view class="_view data-v-0bd6da1a referrals"> 类型：180粒/瓶 </view>
+          </view>
+          <view class="_view data-v-0bd6da1a mold">
+            <text class="_text data-v-0bd6da1a">￥263\n</text>
+            <text class="_text data-v-0bd6da1a">x 1</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="_view data-v-0bd6da1a detail">
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">订单编号</text>
+        <text class="_text data-v-0bd6da1a">1223541545</text>
+      </view>
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">下单时间</text>
+        <text class="_text data-v-0bd6da1a">2018.10.25 11:35:33</text>
+      </view>
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">配送方式</text>
+        <text class="_text data-v-0bd6da1a">圆通速递</text>
+      </view>
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">支付方式</text>
+        <text class="_text data-v-0bd6da1a">在线支付</text>
+      </view>
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">支付时间</text>
+        <text class="_text data-v-0bd6da1a">2018.10.25 11:35:33</text>
+      </view>
+    </view>
+    <view class="_view data-v-0bd6da1a orderMoney">
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">商品金额</text>
+        <text class="_text data-v-0bd6da1a">￥263.00</text>
+      </view>
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">运费</text>
+        <text class="_text data-v-0bd6da1a">+￥0.00</text>
+      </view>
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">优惠券</text>
+        <text class="_text data-v-0bd6da1a">-￥50.00</text>
+      </view>
+      <view class="_view data-v-0bd6da1a">
+        <text class="_text data-v-0bd6da1a">实付款</text>
+        <text class="_text data-v-0bd6da1a">￥263.00</text>
+      </view>
+    </view>
+    <view class="_view data-v-0bd6da1a btn">
+      <button wx:if="{{type==1}}" class="_button data-v-0bd6da1a sub" type="default"> 再次购买 </button>
+      <button wx:if="{{type==2}}" class="_button data-v-0bd6da1a sub" type="default"> 立即付款 </button>
+      <button wx:if="{{type==4}}" class="_button data-v-0bd6da1a sub" type="default"> 立即评价 </button>
+      <button wx:if="{{type==3}}" class="_button data-v-0bd6da1a sub" type="default"> 确认收货 </button>
+    </view>
+  </view>
+</template>

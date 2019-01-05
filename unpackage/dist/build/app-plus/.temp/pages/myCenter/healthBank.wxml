@@ -1,0 +1,1 @@
+<import src="/pages/myCenter/healthBank.vue.wxml" /><template is="091473c8" data="{{ ...$root['0'], $root }}"/>

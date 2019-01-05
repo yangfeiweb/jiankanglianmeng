@@ -1,0 +1,30 @@
+<template name="50470aa5">
+  <view class="_view data-v-eaa921de content">
+    <scroll-view wx:if="{{list.length>0}}" scroll-y="true" class="_scroll-view data-v-eaa921de">
+      <block>
+        <view class="_view data-v-eaa921de bank">
+          <view class="_view data-v-eaa921de top">
+            <view class="_view data-v-eaa921de img">
+              <image src="../../static/aliPay.png" mode class="_image data-v-eaa921de"></image>
+              <text class="_text data-v-eaa921de">支付宝</text>
+            </view>
+            <view class="_view data-v-eaa921de">
+              <text class="_text data-v-eaa921de">删除</text>
+            </view>
+          </view>
+          <view class="_view data-v-eaa921de name">
+            <text class="_text data-v-eaa921de">用户名:</text>
+            <text class="_text data-v-eaa921de">张三\n</text>
+            <text class="_text data-v-eaa921de">支付宝账号:</text>
+            <text class="_text data-v-eaa921de">12345678</text>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+    <view wx:else class="_view data-v-eaa921de bgImg">
+      <image src="../../static/userBg.png" mode class="_image data-v-eaa921de"></image>
+      <text class="_text data-v-eaa921de">您还没有添加账户哦</text>
+      <button type="default" class="_button data-v-eaa921de">添加</button>
+    </view>
+  </view>
+</template>

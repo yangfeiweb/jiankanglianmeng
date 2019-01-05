@@ -1,0 +1,83 @@
+@import "../../common/vendor.wxss";
+
+.invite {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.inviteBg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.posi {
+  position: absolute;
+}
+.code {
+  left: 120rpx;
+  bottom: 403rpx;
+  font-size: 163rpx;
+  font-weight: normal;
+  color: rgba(205,74,27,1);
+  line-height: 43rpx;
+  text-shadow: 0rpx 7rpx 7rpx rgba(205,74,27,0.42);
+}
+.shareText {
+  width: 100%;
+  text-align: center;
+  bottom: 85rpx;
+  font-size: 34rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight: bold;
+  color: rgba(205,74,27,1);
+  line-height: 43rpx;
+}
+.copy {
+  left: 213rpx;
+  bottom: 287rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: rgba(205,74,27,1);
+  line-height: 43rpx;
+}
+.shareBtn {
+  bottom: -495rpx;
+  font-size: 34rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight: bold;
+  color: rgba(205,74,27,1);
+  line-height: 43rpx;
+}
+._button[plain] {
+  color: rgba(205,74,27,1);
+  border: none;
+  background-color: transparent;
+}
+._button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14rpx;
+  padding-right: 14rpx;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  border-radius: 5rpx;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: rgba(205,74,27,1);
+  background-color: #F8F8F8;
+}

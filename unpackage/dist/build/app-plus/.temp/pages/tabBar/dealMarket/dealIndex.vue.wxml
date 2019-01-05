@@ -1,0 +1,176 @@
+<import src="/components/mpvue-echarts/src/echarts.vue.wxml" />
+<template name="015c4d85">
+  <view class="_view data-v-3b44a73e content">
+    <view class="_view data-v-3b44a73e top">
+      <view class="_view data-v-3b44a73e topBg"></view>
+      <view class="_view data-v-3b44a73e title">
+        <view class="_view data-v-3b44a73e tTop">
+          <view class="_view data-v-3b44a73e tLeft">
+            <view class="_view data-v-3b44a73e tImg">
+              <image src="../../../static/photo.png" mode class="_image data-v-3b44a73e"></image>
+            </view>
+            <view class="_view data-v-3b44a73e tName">
+              <text class="_text data-v-3b44a73e">MyName\n</text>
+              <text class="_text data-v-3b44a73e">15888888888</text>
+            </view>
+          </view>
+          <view class="_view data-v-3b44a73e tLeft">
+            <image src="../../../static/qrcode.png" mode class="_image data-v-3b44a73e"></image>
+            <text class="_text data-v-3b44a73e">数据钱包</text>
+          </view>
+        </view>
+        <view class="_view data-v-3b44a73e tMiddle">
+          <view class="_view data-v-3b44a73e lifeNum">
+            <text class="_text data-v-3b44a73e">生命果(个)\n</text>
+            <text class="_text data-v-3b44a73e">6,666</text>
+          </view>
+          <view class="_view data-v-3b44a73e lifeNum">
+            <text class="_text data-v-3b44a73e">余额(人民币)\n</text>
+            <text class="_text data-v-3b44a73e">6666,6666</text>
+          </view>
+        </view>
+        <view class="_view data-v-3b44a73e tBottom">
+          <view class="_view data-v-3b44a73e manage" data-sall="1" bindtap="handleProxy" data-eventid="{{'zuD-0'}}" data-comkey="{{$k}}">
+            <image src="../../../static/manage1.png" mode class="_image data-v-3b44a73e"></image>
+            <text class="_text data-v-3b44a73e">买入</text>
+          </view>
+          <view class="_view data-v-3b44a73e manage" data-sall="2" bindtap="handleProxy" data-eventid="{{'yd6-1'}}" data-comkey="{{$k}}">
+            <image src="../../../static/hammer.png" mode class="_image data-v-3b44a73e">锤子</image>
+            <text class="_text data-v-3b44a73e">卖出</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3b44a73e canvasView">
+      <view class="_view data-v-3b44a73e canvasing">
+        <view class="_view data-v-3b44a73e canvase"> 市场涨幅 </view>
+        <view class="_view data-v-3b44a73e canvase">
+          <text bindtap="handleProxy" data-type1="0" data-eventid="{{'Iwq-2'}}" data-comkey="{{$k}}" class="_text data-v-3b44a73e {{type1 == '0' ? 'active1' : ''}}">10MIN</text>
+          <text bindtap="handleProxy" data-type1="1" data-eventid="{{'SRR-3'}}" data-comkey="{{$k}}" class="_text data-v-3b44a73e {{type1 == '1' ? 'active1' : ''}}">1H</text>
+          <text bindtap="handleProxy" data-type1="2" data-eventid="{{'6vz-4'}}" data-comkey="{{$k}}" class="_text data-v-3b44a73e {{type1 == '2' ? 'active1' : ''}}">24H</text>
+          <text bindtap="handleProxy" data-type1="3" data-eventid="{{'D2g-5'}}" data-comkey="{{$k}}" class="_text data-v-3b44a73e {{type1 == '3' ? 'active1' : ''}}">1Y</text>
+          <text bindtap="handleProxy" data-type1="4" data-eventid="{{'ep6-6'}}" data-comkey="{{$k}}" class="_text data-v-3b44a73e {{type1 == '4' ? 'active1' : ''}}">1M</text>
+        </view>
+      </view>
+      <template canvasId="line" data="{{...$root['0'], ...$root[$kk+'JL6-0'],$root}}" is="79400313"></template>
+    </view>
+    <view class="_view data-v-3b44a73e list">
+      <view class="_view data-v-3b44a73e listTop">
+        <view class="_view data-v-3b44a73e listLeft"> 交易明细(每日交易时间9：00~22：00) </view>
+        <view class="_view data-v-3b44a73e listLeft">
+          <text bindtap="handleProxy" data-type="0" data-eventid="{{'e7u-7'}}" data-comkey="{{$k}}" class="_text data-v-3b44a73e {{type == '0' ? 'active' : ''}}">所有</text>
+          <text bindtap="handleProxy" data-type="1" data-eventid="{{'Y2P-8'}}" data-comkey="{{$k}}" class="_text data-v-3b44a73e {{type == '1' ? 'active' : ''}}">买入</text>
+          <text bindtap="handleProxy" data-type="2" data-eventid="{{'NL0-9'}}" data-comkey="{{$k}}" class="_text data-v-3b44a73e {{type == '2' ? 'active' : ''}}">卖出</text>
+        </view>
+      </view>
+      <view class="_view data-v-3b44a73e listDetail">
+        <view class="_view data-v-3b44a73e mde">
+          <view class="_view data-v-3b44a73e five">
+            <text class="_text data-v-3b44a73e">时间</text>
+            <text class="_text data-v-3b44a73e">数量</text>
+            <text class="_text data-v-3b44a73e">单价</text>
+            <text class="_text data-v-3b44a73e">金额</text>
+            <text class="_text data-v-3b44a73e">类型</text>
+          </view>
+          <scroll-view scroll-y="true" class="_scroll-view data-v-3b44a73e">
+            <block>
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">09-01 09：00</text>
+                <text class="_text data-v-3b44a73e">66个</text>
+                <text class="_text data-v-3b44a73e">￥66.66</text>
+                <text class="_text data-v-3b44a73e">￥666.66</text>
+                <text class="_text data-v-3b44a73e">卖出(代售)</text>
+              </view>
+            </block>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{toast}}" class="_view data-v-3b44a73e toast">
+      <view class="_view data-v-3b44a73e main">
+        <view wx:if="{{sall==2}}" class="_view data-v-3b44a73e sallBuy">
+          <view class="_view data-v-3b44a73e sTop">
+            <view class="_view data-v-3b44a73e sImg">
+              <image src="../../../static/photo.png" mode class="_image data-v-3b44a73e"></image>
+            </view>
+            <view class="_view data-v-3b44a73e sTitle">
+              <text class="_text data-v-3b44a73e">MyName</text>
+            </view>
+          </view>
+          <view class="_view data-v-3b44a73e tTitle"> 卖出交易 </view>
+          <view class="_view data-v-3b44a73e sMiddle">
+            <view class="_view data-v-3b44a73e inputTitle">
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">卖出果实(个)\n</text>
+                <input placeholder-class="place-holder" type="number" placeholder="输入卖出数量" value="{{sallNum}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'VmB-10'}}" data-comkey="{{$k}}" class="_input data-v-3b44a73e"
+                />
+                <text wx:if="{{sallNum>haveNum}}" class="_text data-v-3b44a73e hides">(数量不足)</text>
+              </view>
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">果实单价(元)\n</text>
+                <input placeholder-class="place-holder" type="number" placeholder="输入果实单价" value="{{unitPrice}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'Kdf-11'}}" data-comkey="{{$k}}" class="_input data-v-3b44a73e"
+                />
+              </view>
+            </view>
+            <view class="_view data-v-3b44a73e showTitle">
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">获得收益(元)\n</text>
+                <text class="_text data-v-3b44a73e">{{earnings}}</text>
+              </view>
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">剩余果实(个)</text>
+                <image src="../../../static/break.png" mode class="_image data-v-3b44a73e"></image>
+                <text class="_text data-v-3b44a73e">\n{{haveNum}}</text>
+              </view>
+            </view>
+          </view>
+          <view class="_view data-v-3b44a73e sBottom">
+            <button wx:if="{{sallNum>haveNum}}" class="_button data-v-3b44a73e btnSall" type="default" disabled="true">卖出</button>
+            <button wx:else class="_button data-v-3b44a73e btnSall1" type="default">卖出</button>
+            <button class="_button data-v-3b44a73e cancel" type="default" bindtap="handleProxy" data-eventid="{{'asK-12'}}" data-comkey="{{$k}}">取消</button>
+          </view>
+        </view>
+        <view wx:if="{{sall==1}}" class="_view data-v-3b44a73e sallBuy">
+          <view class="_view data-v-3b44a73e sTop">
+            <view class="_view data-v-3b44a73e sImg">
+              <image src="../../../static/photo.png" mode class="_image data-v-3b44a73e"></image>
+            </view>
+            <view class="_view data-v-3b44a73e sTitle">
+              <text class="_text data-v-3b44a73e">MyName</text>
+              <navigator class="_navigator data-v-3b44a73e">立即充值</navigator>
+            </view>
+          </view>
+          <view class="_view data-v-3b44a73e tTitle"> 买入交易 </view>
+          <view class="_view data-v-3b44a73e sMiddle">
+            <view class="_view data-v-3b44a73e inputTitle">
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">购买果实(个)\n</text>
+                <text class="_text data-v-3b44a73e frits">66666</text>
+              </view>
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">果实单价(元)\n</text>
+                <text class="_text data-v-3b44a73e frits">66666</text>
+              </view>
+            </view>
+            <view class="_view data-v-3b44a73e showTitle">
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">支付金额(元)\n</text>
+                <text class="_text data-v-3b44a73e">77777</text>
+              </view>
+              <view class="_view data-v-3b44a73e">
+                <text class="_text data-v-3b44a73e">钱包金额(元)</text>
+                <image src="../../../static/break.png" mode class="_image data-v-3b44a73e"></image>
+                <text class="_text data-v-3b44a73e">\n6666</text>
+                <text class="_text data-v-3b44a73e warn">(金额不足)</text>
+              </view>
+            </view>
+          </view>
+          <view class="_view data-v-3b44a73e sBottom">
+            <button class="_button data-v-3b44a73e btnSall" type="default" disabled="true">买入</button>
+            <button class="_button data-v-3b44a73e cancel" type="default" bindtap="handleProxy" data-eventid="{{'nfm-13'}}" data-comkey="{{$k}}">取消</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

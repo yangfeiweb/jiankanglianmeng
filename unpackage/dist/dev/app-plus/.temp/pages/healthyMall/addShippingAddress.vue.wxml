@@ -1,0 +1,31 @@
+<import src="/components/mpvue-citypicker/mpvueCityPicker.vue.wxml" />
+<template name="a5acf844">
+  <view class="_view data-v-590a4dd6 index">
+    <view class="_view data-v-590a4dd6 addSiteView">
+      <view class="_view data-v-590a4dd6 siteName siteViewItem">
+        <text class="_text data-v-590a4dd6">收货人: </text>
+        <input type="text" bindinput="handleProxy" data-eventid="{{'Fbq-0'}}" data-comkey="{{$k}}" class="_input data-v-590a4dd6" />
+      </view>
+      <view class="_view data-v-590a4dd6 siteName siteViewItem">
+        <text class="_text data-v-590a4dd6">手机号: </text>
+        <input type="text" bindinput="handleProxy" data-eventid="{{'xW1-1'}}" data-comkey="{{$k}}" class="_input data-v-590a4dd6" />
+      </view>
+      <view class="_view data-v-590a4dd6 setDefalut siteViewItem" bindtap="handleProxy" data-eventid="{{'xo1-2'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-590a4dd6 regionTitle">
+          <text class="_text data-v-590a4dd6 regionName">所在地区: </text>
+          <text class="_text data-v-590a4dd6">{{regionText.label}}</text>
+        </view>
+        <image src="../../static/move.png" mode class="_image data-v-590a4dd6"></image>
+      </view>
+      <view class="_view data-v-590a4dd6  siteViewItem">
+        <input type="text" color="#519EF7" bindinput="handleProxy" placeholder="请填写详细地址：如街道，门牌号，小区，楼栋号，单元等..." data-eventid="{{'fH7-3'}}" data-comkey="{{$k}}" class="_input data-v-590a4dd6" />
+      </view>
+      <view class="_view data-v-590a4dd6 setDefalut">
+        <text class="_text data-v-590a4dd6">设为默认地址:</text>
+        <switch bindchange="handleProxy" color="#519EF7" data-eventid="{{'ijU-4'}}" data-comkey="{{$k}}" class="_switch data-v-590a4dd6" />
+      </view>
+      <text class="_text data-v-590a4dd6 addSite" bindtap="handleProxy" data-eventid="{{'JB7-5'}}" data-comkey="{{$k}}">保存</text>
+    </view>
+    <template ref="mpvueCityPicker" bindonCancel="handleProxy" bindonConfirm="handleProxy" data-eventid="{{'aO1-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Zku-0'],$root}}" is="690f077a"></template>
+  </view>
+</template>

@@ -1,0 +1,56 @@
+<template name="e84423bc">
+  <view class="_view data-v-4cee436e content">
+    <view class="_view data-v-4cee436e title">
+      <view class="_view data-v-4cee436e top"> 选择渠道 </view>
+      <view class="_view data-v-4cee436e list">
+        <view class="_view data-v-4cee436e img1">
+          <image src="../../../static/bankPay.png" mode class="_image data-v-4cee436e"></image>
+          <text class="_text data-v-4cee436e">提取到银行卡</text>
+        </view>
+        <view class="_view data-v-4cee436e">
+          <text class="_text data-v-4cee436e">建设银行:15151515151</text>
+          <image data-type="1" wx:if="{{select&&type!=1}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'ghM-0'}}" data-comkey="{{$k}}" class="_image data-v-4cee436e"></image>
+          <image wx:if="{{select&&type==1}}" src="../../../static/selectY.png" mode class="_image data-v-4cee436e"></image>
+        </view>
+      </view>
+      <view class="_view data-v-4cee436e list">
+        <view class="_view data-v-4cee436e img2">
+          <image src="../../../static/aliPay.png" mode class="_image data-v-4cee436e"></image>
+          <text class="_text data-v-4cee436e">提取到支付宝</text>
+        </view>
+        <view class="_view data-v-4cee436e">
+          <text class="_text data-v-4cee436e">支付包:15899999999</text>
+          <image data-type="2" wx:if="{{select&&type!=2}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'vpP-1'}}" data-comkey="{{$k}}" class="_image data-v-4cee436e"></image>
+          <image wx:if="{{select&&type==2}}" src="../../../static/selectY.png" mode class="_image data-v-4cee436e"></image>
+        </view>
+      </view>
+      <view class="_view data-v-4cee436e list">
+        <view class="_view data-v-4cee436e img3">
+          <image src="../../../static/wxPay.png" mode class="_image data-v-4cee436e"></image>
+          <text class="_text data-v-4cee436e">提取到微信</text>
+        </view>
+        <view class="_view data-v-4cee436e">
+          <text class="_text data-v-4cee436e">微信:15151515151</text>
+          <image data-type="3" wx:if="{{select&&type!=3}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'AzL-2'}}" data-comkey="{{$k}}" class="_image data-v-4cee436e"></image>
+          <image wx:if="{{select&&type==3}}" src="../../../static/selectY.png" mode class="_image data-v-4cee436e"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-4cee436e title">
+      <view class="_view data-v-4cee436e top"> 选择提取额度 </view>
+      <view class="_view data-v-4cee436e edu">
+        <view class="_view data-v-4cee436e wMoney"> 提取金额 </view>
+        <view class="_view data-v-4cee436e import">
+          <text class="_text data-v-4cee436e">￥</text>
+          <input type="number" placeholder="输入需要提取的金额" placeholder-class="place-holder" value="" class="_input data-v-4cee436e" />
+        </view>
+        <view class="_view data-v-4cee436e canUse">
+          <text class="_text data-v-4cee436e">可用余额:0元</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-4cee436e pay">
+      <button type="default" class="_button data-v-4cee436e">提现</button>
+    </view>
+  </view>
+</template>

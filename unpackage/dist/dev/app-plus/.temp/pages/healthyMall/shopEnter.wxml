@@ -1,0 +1,1 @@
+<import src="/pages/healthyMall/shopEnter.vue.wxml" /><template is="4e36a48e" data="{{ ...$root['0'], $root }}"/>

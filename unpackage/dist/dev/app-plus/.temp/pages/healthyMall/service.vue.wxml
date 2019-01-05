@@ -1,0 +1,47 @@
+<template name="1c8b192c">
+  <view class="_view data-v-7e44da34 service">
+    <view class="_view data-v-7e44da34 serviceHeaderView">
+      <image class="_image data-v-7e44da34 serviceBg" src="../../static/serviceBg.png" mode></image>
+      <view class="_view data-v-7e44da34 HeaderView">
+        <view class="_view data-v-7e44da34 serviceHeader">
+          <text class="_text data-v-7e44da34 title">在线客服</text>
+          <text class="_text data-v-7e44da34 serviceTime">人工服务时间: 工作日{{serviceTime}}</text>
+          <text class="_text data-v-7e44da34 serviceBtn">立即咨询</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-7e44da34 serviceList">
+      <view class="_view data-v-7e44da34 serviceListTitle">
+        <text class="_text data-v-7e44da34 line"></text>
+        <text class="_text data-v-7e44da34 title">热门问题</text>
+        <text class="_text data-v-7e44da34 line"></text>
+      </view>
+      <view class="_view data-v-7e44da34 uni-card">
+        <view class="_view data-v-7e44da34 uni-list">
+          <block wx:key="index" key="{{index}}" wx:for="{{lists}}" wx:for-index="index" wx:for-item="list">
+            <view class="_view data-v-7e44da34 uni-list-cell uni-collapse">
+              <view class="_view data-v-7e44da34 uni-list-cell-navigate uni-navigate-bottom {{list.show ? 'uni-active' : ''}}" bindtap="handleProxy" data-eventid="{{'VeY-0-'+index}}" data-comkey="{{$k}}"> {{list.title}} </view>
+              <view class="_view data-v-7e44da34 uni-collapse-content {{list.show ? 'uni-active' : ''}}">
+                <view wx:if="{{list.type === 'pay'}}" class="_view data-v-7e44da34">
+                  <view class="_view data-v-7e44da34 uni-list"> 充值对充值人事免费的，手续费由平台承担。充值对充值人事免费的，手续由平台承担。 </view>
+                </view>
+                <view wx:if="{{list.type === 'withdraw'}}" class="_view data-v-7e44da34 page-pd">
+                  <view class="_view data-v-7e44da34 uni-list"> 充值对充值人事免费的，手续费由平台承担。充值对充值人事免费的，手续由平台承担。 </view>
+                </view>
+                <view wx:if="{{list.type === 'shopEnter'}}" class="_view data-v-7e44da34">
+                  <view class="_view data-v-7e44da34 uni-list"> 充值对充值人事免费的，手续费由平台承担。充值对充值人事免费的，手续由平台承担。 </view>
+                </view>
+                <view wx:if="{{list.type === 'brokerage'}}" class="_view data-v-7e44da34">
+                  <view class="_view data-v-7e44da34 uni-list"> 充值对充值人事免费的，手续费由平台承担。充值对充值人事免费的，手续由平台承担。 </view>
+                </view>
+                <view wx:if="{{list.type === 'interest'}}" class="_view data-v-7e44da34">
+                  <view class="_view data-v-7e44da34 uni-list"> 充值对充值人事免费的，手续费由平台承担。充值对充值人事免费的，手续由平台承担。 </view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

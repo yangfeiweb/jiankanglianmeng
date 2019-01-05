@@ -1,0 +1,56 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="106c86db">
+  <view class="_view data-v-c1c7ed7c content">
+    <view class="_view data-v-c1c7ed7c wallet">
+      <view class="_view data-v-c1c7ed7c photo">
+        <image src="../../../static/photo.png" mode class="_image data-v-c1c7ed7c"></image>
+      </view>
+      <view class="_view data-v-c1c7ed7c bgc"></view>
+      <view class="_view data-v-c1c7ed7c main">
+        <text class="_text data-v-c1c7ed7c">myName</text>
+        <text class="_text data-v-c1c7ed7c">6666</text>
+        <text class="_text data-v-c1c7ed7c">可交易的生命果</text>
+        <text class="_text data-v-c1c7ed7c">昨日市场成交价</text>
+        <image src="../../../static/broken.png" mode class="_image data-v-c1c7ed7c"></image>
+        <view class="_view data-v-c1c7ed7c bMian">
+          <view class="_view data-v-c1c7ed7c">
+            <text class="_text data-v-c1c7ed7c">最高价</text>
+            <text class="_text data-v-c1c7ed7c">￥15.67元/个</text>
+          </view>
+          <view class="_view data-v-c1c7ed7c">
+            <text class="_text data-v-c1c7ed7c">最低价</text>
+            <text class="_text data-v-c1c7ed7c">￥5.67元/个</text>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-c1c7ed7c qrcode">
+        <image src="../../../static/qrcode.png" mode class="_image data-v-c1c7ed7c"></image>
+        <text class="_text data-v-c1c7ed7c">钱包地址</text>
+      </view>
+      <view class="_view data-v-c1c7ed7c turn">
+        <navigator url="walletAddress" class="_navigator data-v-c1c7ed7c tLeft">
+          <image src="../../../static/turn.png" mode class="_image data-v-c1c7ed7c"></image>
+          <text class="_text data-v-c1c7ed7c">转让生命果</text>
+        </navigator>
+        <navigator url="discounts" class="_navigator data-v-c1c7ed7c tRight">
+          <image src="../../../static/log.png" mode class="_image data-v-c1c7ed7c"></image>
+          <text class="_text data-v-c1c7ed7c">钱包记录</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="_view data-v-c1c7ed7c wList">
+      <view class="_view data-v-c1c7ed7c title"> 钱包记录 </view>
+      <view id="list" class="_view data-v-c1c7ed7c active" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+        <view class="_view data-v-c1c7ed7c">
+          <text class="_text data-v-c1c7ed7c">转让</text>
+          <text class="_text data-v-c1c7ed7c">11月13日 11:17</text>
+        </view>
+        <view class="_view data-v-c1c7ed7c">
+          <text class="_text data-v-c1c7ed7c">+888生命果</text>
+          <text class="_text data-v-c1c7ed7c">aaaaaaaaa</text>
+        </view>
+      </view>
+      <template data="{{...$root['0'], ...$root[$kk+'uqj-0'],$root}}" is="53a2a299"></template>
+    </view>
+  </view>
+</template>

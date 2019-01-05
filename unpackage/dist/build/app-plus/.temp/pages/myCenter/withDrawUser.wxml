@@ -1,0 +1,1 @@
+<import src="/pages/myCenter/withDrawUser.vue.wxml" /><template is="50470aa5" data="{{ ...$root['0'], $root }}"/>

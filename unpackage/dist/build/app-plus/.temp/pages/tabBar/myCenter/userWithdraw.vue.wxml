@@ -1,0 +1,88 @@
+<template name="0bdf158d">
+  <view class="_view data-v-a690cb98 content">
+    <view class="_view data-v-a690cb98 aliPay" wx:if="{{type=='0'}}">
+      <view class="_view data-v-a690cb98 user">
+        <text class="_text data-v-a690cb98">账户类型:</text>
+        <view class="_view data-v-a690cb98 img">
+          <text class="_text data-v-a690cb98">支付包</text>
+          <image src="../../../static/king.png" mode class="_image data-v-a690cb98"></image>
+        </view>
+        <view class="_view data-v-a690cb98 right" bindtap="handleProxy" data-eventid="{{'he3-0'}}" data-comkey="{{$k}}">
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-a690cb98"></image>
+        </view>
+      </view>
+      <view class="_view data-v-a690cb98 user">
+        <text class="_text data-v-a690cb98">用户姓名:</text>
+        <input type="text" placeholder-class="place-holder" value="" placeholder="输入支付宝认证姓名" class="_input data-v-a690cb98" />
+      </view>
+      <view class="_view data-v-a690cb98 user">
+        <text class="_text data-v-a690cb98">支付宝账号:</text>
+        <input type="text" value="" placeholder-class="place-holder" placeholder="输入支付宝认证账户" class="_input data-v-a690cb98" />
+      </view>
+    </view>
+    <view class="_view data-v-a690cb98 aliPay" wx:if="{{type!='0'}}">
+      <view class="_view data-v-a690cb98 user">
+        <text class="_text data-v-a690cb98">账户类型:</text>
+        <view class="_view data-v-a690cb98 img">
+          <text class="_text data-v-a690cb98">华夏银行</text>
+        </view>
+        <view class="_view data-v-a690cb98 right" bindtap="handleProxy" data-eventid="{{'gi1-1'}}" data-comkey="{{$k}}">
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-a690cb98"></image>
+        </view>
+      </view>
+      <view class="_view data-v-a690cb98 user">
+        <text class="_text data-v-a690cb98">支行名称:</text>
+        <input type="text" placeholder-class="place-holder" value="" placeholder="输入开户行支行名称" class="_input data-v-a690cb98" />
+      </view>
+      <view class="_view data-v-a690cb98 user">
+        <text class="_text data-v-a690cb98">持卡人:</text>
+        <input type="text" value="" placeholder-class="place-holder" placeholder="输入持卡人姓名" class="_input data-v-a690cb98" />
+      </view>
+      <view class="_view data-v-a690cb98 user user1">
+        <text class="_text data-v-a690cb98">银行卡卡号:</text>
+        <input type="text" value="" placeholder-class="place-holder" placeholder="输入银行卡卡号" class="_input data-v-a690cb98" />
+      </view>
+    </view>
+    <view class="_view data-v-a690cb98 bottom">
+      <view class="_view data-v-a690cb98 texts">
+        <text class="_text data-v-a690cb98">温馨提示:\n</text>
+        <text class="_text data-v-a690cb98">1.请确保所填体现账户信息的真实性、正确性，以便快速准确的转入到您的账户里。\n</text>
+        <text class="_text data-v-a690cb98">2.若因账户信息填写有误，导致转账失败、转入他人账户，本公司概不负责。</text>
+      </view>
+      <view class="_view data-v-a690cb98 btn">
+        <button type="default" class="_button data-v-a690cb98">确认添加</button>
+      </view>
+    </view>
+    <view class="_view data-v-a690cb98 toast" wx:if="{{toast}}">
+      <view class="_view data-v-a690cb98 bank">
+        <view class="_view data-v-a690cb98 bTop">
+          <text class="_text data-v-a690cb98">选择账户类型</text>
+          <image src="../../../static/mark.png" mode bindtap="handleProxy" data-eventid="{{'Tem-2'}}" data-comkey="{{$k}}" class="_image data-v-a690cb98"></image>
+        </view>
+        <scroll-view scroll-y="true" class="_scroll-view data-v-a690cb98">
+          <view class="_view data-v-a690cb98 first" data-type="0" bindtap="handleProxy" data-eventid="{{'81G-3'}}" data-comkey="{{$k}}">
+            <view class="_view data-v-a690cb98">
+              <image src="../../../static/aliPay.png" mode class="_image data-v-a690cb98"></image>
+              <text class="_text data-v-a690cb98">支付宝</text>
+              <image class="_image data-v-a690cb98 icon" src="../../../static/king.png" mode></image>
+            </view>
+            <view class="_view data-v-a690cb98">
+              <image wx:if="{{type=='0'}}" src="../../../static/mark1.png" mode class="_image data-v-a690cb98"></image>
+            </view>
+          </view>
+          <block wx:key="item" key="{{item}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+            <view class="_view data-v-a690cb98 first" bindtap="handleProxy" data-type="{{item.id}}" data-eventid="{{'X5z-4-'+index}}" data-comkey="{{$k}}">
+              <view class="_view data-v-a690cb98">
+                <image src="../../../static/aliPay.png" mode class="_image data-v-a690cb98"></image>
+                <text class="_text data-v-a690cb98">华夏银行</text>
+              </view>
+              <view class="_view data-v-a690cb98">
+                <image wx:if="{{type==item.id}}" src="../../../static/mark1.png" mode class="_image data-v-a690cb98"></image>
+              </view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</template>

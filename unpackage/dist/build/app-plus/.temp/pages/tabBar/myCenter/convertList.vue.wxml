@@ -1,0 +1,27 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="3e2f64ee">
+  <view class="_view data-v-28291802 content">
+    <view wx:if="{{list.length}}" class="_view data-v-28291802">
+      <view class="_view data-v-28291802 list" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+        <view class="_view data-v-28291802 img">
+          <image src="../../../static/photo.png" mode class="_image data-v-28291802"></image>
+        </view>
+        <navigator url="goodsDetail" class="_navigator data-v-28291802 right">
+          <view class="_view data-v-28291802">
+            <text class="_text data-v-28291802">精选黑色双肩背包\n</text>
+            <text class="_text data-v-28291802">6666</text>
+            <text class="_text data-v-28291802">生命果</text>
+          </view>
+          <view class="_view data-v-28291802">
+            <image src="../../../static/blackArrow.png" mode class="_image data-v-28291802"></image>
+          </view>
+        </navigator>
+      </view>
+      <template data="{{...$root['0'], ...$root[$kk+'aNI-0'],$root}}" is="53a2a299"></template>
+    </view>
+    <view wx:else class="_view data-v-28291802 empty">
+      <image src="../../../static/empty.png" mode class="_image data-v-28291802"></image>
+      <text class="_text data-v-28291802">您还没有兑换记录哦</text>
+    </view>
+  </view>
+</template>

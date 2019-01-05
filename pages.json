@@ -1,0 +1,490 @@
+{
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages 
+        {
+        		"path" : "pages/tabBar/healthySpace/healthySpace",
+        		"style" : {
+        				"navigationBarTitleText" : "健康空间",
+        				"navigationBarBackgroundColor" : "#fff",
+                "app-plus" : {
+                		"titleNView" : {
+                				"type" : "transparent"
+                		}
+                }
+        		}
+        },
+        {
+        	"path" : "pages/tabBar/healthyMall/healthyMall",
+        	"style" : {
+        		"navigationBarTitleText" : "健康商城",
+        		"navigationBarBackgroundColor" : "#fff",
+            "app-plus" : {
+            		"titleNView" : {
+            				"type" : "transparent"
+            		}
+            }
+        	}
+        },
+        {
+          "path" : "pages/tabBar/myCenter/personal",
+          "style" : {
+            "navigationBarTitleText" : "个人中心",
+            "navigationBarBackgroundColor" : "#fff",
+            "app-plus" : {
+            		"titleNView" : {
+            				"type" : "transparent"
+            		}
+            }
+          }
+        },
+        
+        {
+          "path" : "pages/tabBar/myCenter/balance",
+          "style" : {
+            "navigationBarTitleText" : "余额",
+            "navigationBarBackgroundColor" : "#FFFFFF",
+            "navigationBarTextStyle" : "black"
+          }
+        },
+        
+        {
+          "path" : "pages/tabBar/myCenter/loginPwd",
+          "style" : {
+            "navigationBarTitleText" : "登录密码",
+            "navigationBarBackgroundColor" : "#ffffff",
+            "navigationBarTextStyle" : "black"
+          }
+        },
+        {
+        		"path" : "pages/healthySpace/invite",
+        		"style" : {
+        				"navigationBarTitleText" : "邀请有礼",
+        				"navigationBarBackgroundColor" : "#fff"
+        		}
+        },
+        {
+        		"path" : "pages/healthyMall/brokerage",
+        		"style" : {
+        				"navigationBarTitleText" : "佣金好礼",
+        				"navigationBarBackgroundColor" : "#fff"
+        		}
+        },
+        {
+          "path" : "pages/tabBar/login/login",
+          "style" : {
+            "navigationBarTitleText" : "登录",
+            "navigationBarBackgroundColor" : "#fff",
+            "app-plus" : {
+            		"titleNView" : {
+            				"type" : "transparent"
+            		}
+            }
+          }
+        },
+        {
+          "path" : "pages/tabBar/register/register",
+          "style" : {
+              "navigationBarTitleText" : "注册",
+              "navigationBarBackgroundColor" : "#fff",
+              "app-plus" : {
+                  "titleNView" : {
+                      "type" : "transparent"
+                  }
+              }
+          }
+        },
+        {
+          "path" : "pages/myCenter/myOrder",
+          "style" : {
+            "navigationBarTitleText" : "我的订单",
+            
+            "navigationBarTextStyle" : "black"
+          }
+        },
+        {
+            "path" : "pages/tabBar/myCenter/myCoupon",
+            "style" : {
+              "navigationBarTitleText" : "我的卡券",
+              "navigationBarBackgroundColor" : "#FFFFFF",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/tabBar/myCenter/goodsDetail",
+            "style" : {
+              "navigationBarTitleText" : "商品详情",
+              "navigationBarBackgroundColor" : "#6CB1E0",
+              "navigationBarTextStyle" : "white"
+            }
+          },
+          
+          {
+            "path" : "pages/tabBar/myCenter/dataWallet",
+            "style" : {
+              "navigationBarTitleText" : "数据钱包",
+              "navigationBarBackgroundColor" : "#659BFD",
+              "navigationBarTextStyle" : "white"
+            }
+          },
+          {
+            "path" : "pages/tabBar/myCenter/walletAddress",
+            "style" : {
+              "navigationBarTitleText" : "钱包地址",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/tabBar/myCenter/discounts",
+            "style" : {
+              "navigationBarTitleText" : "优惠礼包",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/tabBar/myCenter/turnSuccess",
+            "style" : {
+              "navigationBarTitleText" : "转出成功",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/myCenter/healthBank",
+            "style" : {
+              "navigationBarTitleText" : "充值中心",
+              "navigationBarBackgroundColor" : "#fff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          
+          {
+            "path" : "pages/myCenter/myMatters",
+            "style" : {
+              "navigationBarTitleText" : "充值记录",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/tabBar/dealMarket/dealMarket",
+            "style" : {
+              "navigationBarTitleText" : "交易市场",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          
+          {
+            "path" : "pages/healthySpace/powerRecord",
+            "style" : {
+              "navigationBarTitleText" : "体力记录",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/healthySpace/powerCheer",
+            "style" : {
+              "navigationBarTitleText" : "体力加油站",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          
+          {
+            "path" : "pages/myCenter/privacyUser",
+            "style" : {
+              "navigationBarTitleText" : "用户隐私政策",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+            {
+            "path" : "pages/myCenter/serviceTitle",
+            "style" : {
+              "navigationBarTitleText" : "用户服务协议",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/myCenter/walletCode",
+            "style" : {
+              "navigationBarTitleText" : "转账",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/myCenter/system",
+            "style" : {
+              "navigationBarTitleText" : "系统更新",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/myCenter/bindWx",
+            "style" : {
+              "navigationBarTitleText" : "社交账号绑定",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+            {
+            "path" : "pages/myCenter/withDrawUser",
+            "style" : {
+              "navigationBarTitleText" : "提现账户",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/tabBar/myCenter/rank",
+            "style" : {
+              "navigationBarTitleText" : "身份验证",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          
+          {
+            "path" : "pages/tabBar/myCenter/userWithdraw",
+            "style" : {
+              "navigationBarTitleText" : "新增账户提现",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          {
+            "path" : "pages/myCenter/setting",
+            "style" : {
+              "navigationBarTitleText" : "账号设置",
+              "navigationBarBackgroundColor" : "#ffffff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          
+          {
+            "path" : "pages/tabBar/myCenter/convertDetail",
+            "style" : {
+              "navigationBarTitleText" : "兑换详情",
+              "navigationBarBackgroundColor" : "#6CB1E0",
+              "navigationBarTextStyle" : "white"
+            }
+          },
+          {
+            "path" : "pages/tabBar/myCenter/convertList",
+            "style" : {
+              "navigationBarTitleText" : "兑换记录",
+              "navigationBarBackgroundColor" : "#6CB1E0",
+              "navigationBarTextStyle" : "white"
+            }
+          },
+          {
+            "path" : "pages/tabBar/myCenter/lifeMall",
+            "style" : {
+              "navigationBarTitleText" : "生命果商城",
+              "navigationBarBackgroundColor" : "#fff",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          
+          {
+            "path" : "pages/tabBar/myCenter/withdraw",
+            "style" : {
+              "navigationBarTitleText" : "提现",
+              "navigationBarBackgroundColor" : "#FFFFFF",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+              {
+            "path" : "pages/tabBar/myCenter/recharge",
+            "style" : {
+              "navigationBarTitleText" : "充值",
+              "navigationBarBackgroundColor" : "#FFFFFF",
+              "navigationBarTextStyle" : "black"
+            }
+          },
+          
+          {
+            "path" : "pages/myCenter/orderDetail",
+            "style" : {
+              "navigationBarTitleText" : "订单详情",
+              "navigationBarBackgroundColor":"#4C83FC",
+              "navigationBarTextStyle" : "white"
+            }
+          },
+        {
+          "path" : "pages/tabBar/dealMarket/dealIndex",
+          "style" : {
+            "navigationBarTitleText" : "交易市场",
+            "navigationBarBackgroundColor" : "#2a99de",
+            "navigationBarTextStyle" : "white"
+          }
+        },
+        {
+        		"path" : "pages/healthyMall/discounts",
+        		"style" : {
+        				"navigationBarTitleText" : "优惠礼包",
+        				"navigationBarBackgroundColor" : "#fff"
+        		}
+        },
+        {
+        		"path" : "pages/healthyMall/shopEnter",
+        		"style" : {
+        				"navigationBarTitleText" : "商家入驻",
+        				"navigationBarBackgroundColor" : "#fff"
+        		}
+        },
+        {
+        		"path" : "pages/healthyMall/goodsList",
+        		"style" : {
+        				"navigationBarTitleText" : "限时高佣",
+        				"navigationBarBackgroundColor" : "#fff"
+        		}
+        },
+        {
+        		"path" : "pages/healthyMall/service",
+        		"style" : {
+        				"navigationBarTitleText" : "联系客服",
+        				"navigationBarBackgroundColor" : "#fff",
+                "app-plus" : {
+                		"titleNView" : {
+                				"type" : "transparent"
+                		}
+                }
+        		}
+        },
+        {
+        		"path" : "pages/healthySpace/recommend",
+        		"style" : {
+        				"navigationBarTitleText" : "推荐有礼",
+        				"navigationBarBackgroundColor" : "#fff"
+        		}
+        },
+         {
+          "path" : "pages/healthyMall/shippingAddress",
+          "style" : {
+            "navigationBarTitleText" : "收货地址",
+            "navigationBarBackgroundColor" : "#fff"
+          }
+        },
+        {
+        	"path" : "pages/healthyMall/settleAccount",
+        	"style" : {
+        		"navigationBarTitleText" : "购物车结算",
+            "navigationBarBackgroundColor" : "#fff"
+        	}
+        },
+        {
+        	"path" : "pages/healthyMall/addShippingAddress",
+        	"style" : {
+        		"navigationBarTitleText" : "添加收获地址",
+        		"navigationBarBackgroundColor" : "#fff"
+        	}
+        },
+        {
+          "path" : "pages/healthyMall/goodsDetails",
+          "style" : {
+            "navigationBarTitleText" : "商品详情",
+            "navigationBarBackgroundColor" : "#E6E6E6",
+            "app-plus" : {
+            		"titleNView" : {
+            				"type" : "transparent"
+            		}
+            }
+          }
+        },
+        {
+        	"path" : "pages/healthyMall/search",
+        	"style" : {
+        		"navigationBarTitleText" : "搜索",
+        	  "navigationBarBackgroundColor" : "#fff",
+            "app-plus" : {
+            		"titleNView" : {
+            				"type" : "transparent"
+            		}
+            }
+        	}
+        },
+        {
+        	"path" : "pages/healthyMall/shoppingCart",
+        	"style" : {
+        		"navigationBarTitleText" : "购物车",
+            "navigationBarBackgroundColor" : "#fff",
+        		"app-plus" : {
+        				"titleNView" : {
+        						"buttons" : [
+        								{
+        										"text" : "\ue534",
+        										"fontSrc" : "/static/uni.ttf",
+        										"fontSize" : "22px",
+        										"color" : "#fff"
+        								}
+        						]
+        				}
+        		}
+        	}
+        }
+    ],
+//     "subPackages" : [
+//         {
+//             "root" : "pages/template",
+//             "pages" : [
+//               
+//             ]
+//         }
+//     ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "健康联盟",
+        "navigationBarBackgroundColor" : "#fff",
+        "backgroundColor" : "#F8F8F8"
+    },
+    "tabBar" : {
+        "color" : "#999999",
+        "selectedColor" : "#14BFE9",
+        "borderStyle" : "none",
+        "backgroundColor" : "#ffffff",
+        "list" : [
+            {
+                "pagePath" : "pages/tabBar/healthySpace/healthySpace",
+                "iconPath" : "static/healthySpace.png",
+                "selectedIconPath" : "static/healthySpaceSelected.png",
+                "text" : "健康空间"
+            },
+            {
+                "pagePath" : "pages/tabBar/dealMarket/dealIndex",
+                "iconPath" : "static/tradingMarket.png",
+                "selectedIconPath" : "static/tradingMarketSelected.png",
+                "text" : "交易市场"
+            },
+            {
+                "pagePath" : "pages/tabBar/healthyMall/healthyMall",
+                "iconPath" : "static/healthyMall.png",
+                "selectedIconPath" : "static/healthyMallSelected.png",
+                "text" : "健康商城"
+            },
+            {
+            		"pagePath" : "pages/tabBar/myCenter/personal",
+            		"iconPath" : "static/myCenter.png",
+            		"selectedIconPath" : "static/myCenterSelected.png",
+            		"text" : "个人中心"
+            }
+			
+        ]
+    },
+  "condition" : { //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [
+      {
+        "name": "", //模式名称
+        "path": "", //启动页面，必选
+        "query": "" //启动参数，在页面的onLoad函数里面得到
+      }
+    ]
+  }
+}

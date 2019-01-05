@@ -1,0 +1,1 @@
+<import src="/pages/myCenter/bindWx.vue.wxml" /><template is="58e0820e" data="{{ ...$root['0'], $root }}"/>

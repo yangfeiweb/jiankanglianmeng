@@ -1,0 +1,1 @@
+<import src="/pages/healthySpace/powerRecord.vue.wxml" /><template is="00b8849e" data="{{ ...$root['0'], $root }}"/>

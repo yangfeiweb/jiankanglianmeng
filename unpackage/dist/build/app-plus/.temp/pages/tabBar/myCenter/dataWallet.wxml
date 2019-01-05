@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/myCenter/dataWallet.vue.wxml" /><template is="106c86db" data="{{ ...$root['0'], $root }}"/>

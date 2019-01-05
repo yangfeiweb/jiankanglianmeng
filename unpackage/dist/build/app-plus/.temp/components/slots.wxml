@@ -1,0 +1,9 @@
+<import src="/components/load-more.vue.wxml" />
+<import src="/components/shareModel.vue.wxml" />
+<import src="/components/mpvue-citypicker/mpvueCityPicker.vue.wxml" />
+<import src="/components/number-box.vue.wxml" />
+<import src="/components/shareModel.vue.wxml" />
+<import src="/components/mpvue-echarts/src/echarts.vue.wxml" />
+<import src="/components/uni-status-bar.vue.wxml" />
+<import src="/components/uni-icon.vue.wxml" />
+<import src="/components/slots" />

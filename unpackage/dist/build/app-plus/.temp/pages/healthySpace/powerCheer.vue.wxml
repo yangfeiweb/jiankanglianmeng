@@ -1,0 +1,146 @@
+<template name="a281cee0">
+  <view class="_view data-v-3cfd937c content">
+    <view class="_view data-v-3cfd937c mainImg">
+      <image src="../../../static/powe.png" mode class="_image data-v-3cfd937c"></image>
+    </view>
+    <view class="_view data-v-3cfd937c title">
+      <view class="_view data-v-3cfd937c time">
+        <image src="../../../static/time.png" mode class="_image data-v-3cfd937c"></image>
+        <text class="_text data-v-3cfd937c">日常任务</text>
+      </view>
+      <view class="_view data-v-3cfd937c list active">
+        <view class="_view data-v-3cfd937c listImg">
+          <image src="../../../static/timeLogin.png" mode style="width: 63rpx;height: 56rpx;" class="_image data-v-3cfd937c"></image>
+        </view>
+        <view class="_view data-v-3cfd937c goDo">
+          <view class="_view data-v-3cfd937c left">
+            <text class="_text data-v-3cfd937c">每日签到</text>
+            <view class="_view data-v-3cfd937c goal">
+              <image src="../../../static/goal.png" mode class="_image data-v-3cfd937c"></image>
+              <text class="_text data-v-3cfd937c">+5体力</text>
+            </view>
+            <text class="_text data-v-3cfd937c">\n每日登陆签到送体力</text>
+          </view>
+        </view>
+        <view class="_view data-v-3cfd937c state">
+          <image wx:if="{{status==1}}" src="../../../static/doIt.png" mode class="_image data-v-3cfd937c"></image>
+          <navigator wx:else src="#" class="_navigator data-v-3cfd937c">去完成</navigator>
+        </view>
+      </view>
+      <view class="_view data-v-3cfd937c list">
+        <view class="_view data-v-3cfd937c listImg">
+          <image src="../../../static/healthGoods.png" mode style="width: 53rpx;height: 51rpx;" class="_image data-v-3cfd937c"></image>
+        </view>
+        <view class="_view data-v-3cfd937c goDo">
+          <view class="_view data-v-3cfd937c left">
+            <text class="_text data-v-3cfd937c">健康商城</text>
+            <view class="_view data-v-3cfd937c goal">
+              <image src="../../../static/goal.png" mode class="_image data-v-3cfd937c"></image>
+              <text class="_text data-v-3cfd937c">+5体力</text>
+            </view>
+            <text class="_text data-v-3cfd937c">\n根据商城购物金额数量赠送不定量体力</text>
+          </view>
+        </view>
+        <view class="_view data-v-3cfd937c state">
+          <navigator src="#" class="_navigator data-v-3cfd937c">去完成</navigator>
+        </view>
+      </view>
+      <view class="_view data-v-3cfd937c list active">
+        <view class="_view data-v-3cfd937c listImg">
+          <image src="../../../static/invinit.png" mode style="width: 54rpx;height: 47rpx;" class="_image data-v-3cfd937c"></image>
+        </view>
+        <view class="_view data-v-3cfd937c goDo">
+          <view class="_view data-v-3cfd937c left">
+            <text class="_text data-v-3cfd937c">邀请好友</text>
+            <view class="_view data-v-3cfd937c goal">
+              <image src="../../../static/goal.png" mode class="_image data-v-3cfd937c"></image>
+              <text class="_text data-v-3cfd937c">+5体力</text>
+            </view>
+            <text class="_text data-v-3cfd937c">\n邀请好友注册，购物赠送一定体力</text>
+          </view>
+        </view>
+        <view class="_view data-v-3cfd937c state">
+          <navigator src="#" class="_navigator data-v-3cfd937c">去完成</navigator>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3cfd937c title">
+      <view class="_view data-v-3cfd937c time">
+        <image src="../../../static/recommend.png" mode style="width: 43rpx;height: 55rpx;" class="_image data-v-3cfd937c"></image>
+        <text class="_text data-v-3cfd937c">推荐任务</text>
+      </view>
+      <view class="_view data-v-3cfd937c list active">
+        <view class="_view data-v-3cfd937c listImg">
+          <image src="../../../static/common.png" mode style="width: 49rpx;height: 51rpx;" class="_image data-v-3cfd937c"></image>
+        </view>
+        <view class="_view data-v-3cfd937c goDo">
+          <view class="_view data-v-3cfd937c left">
+            <text class="_text data-v-3cfd937c">关注公众号</text>
+            <view class="_view data-v-3cfd937c goal">
+              <image src="../../../static/goal.png" mode class="_image data-v-3cfd937c"></image>
+              <text class="_text data-v-3cfd937c">+5体力</text>
+            </view>
+            <text class="_text data-v-3cfd937c">\n关注“健康联盟”微信公众号获取体力</text>
+          </view>
+        </view>
+        <view class="_view data-v-3cfd937c state">
+          <navigator src="#" class="_navigator data-v-3cfd937c">去完成</navigator>
+        </view>
+      </view>
+      <view class="_view data-v-3cfd937c list">
+        <view class="_view data-v-3cfd937c listImg">
+          <image src="../../../static/idCard.png" mode style="width: 56rpx;height: 51rpx;" class="_image data-v-3cfd937c"></image>
+        </view>
+        <view class="_view data-v-3cfd937c goDo">
+          <view class="_view data-v-3cfd937c left">
+            <text class="_text data-v-3cfd937c">实名认证</text>
+            <view class="_view data-v-3cfd937c goal">
+              <image src="../../../static/goal.png" mode class="_image data-v-3cfd937c"></image>
+              <text class="_text data-v-3cfd937c">+5体力</text>
+            </view>
+            <text class="_text data-v-3cfd937c">\n完善个人信息，绑定钱包信息</text>
+          </view>
+        </view>
+        <view class="_view data-v-3cfd937c state">
+          <navigator src="#" class="_navigator data-v-3cfd937c">去完成</navigator>
+        </view>
+      </view>
+      <view class="_view data-v-3cfd937c list active">
+        <view class="_view data-v-3cfd937c listImg">
+          <image src="../../../static/quality.png" mode style="width: 56rpx;height: 48rpx;" class="_image data-v-3cfd937c"></image>
+        </view>
+        <view class="_view data-v-3cfd937c goDo">
+          <view class="_view data-v-3cfd937c left">
+            <text class="_text data-v-3cfd937c">正品溯源</text>
+            <view class="_view data-v-3cfd937c goal">
+              <image src="../../../static/goal.png" mode class="_image data-v-3cfd937c"></image>
+              <text class="_text data-v-3cfd937c">+5体力</text>
+            </view>
+            <text class="_text data-v-3cfd937c">\n为好友分享正品商品，赠送一定体力</text>
+          </view>
+        </view>
+        <view class="_view data-v-3cfd937c state">
+          <navigator src="#" class="_navigator data-v-3cfd937c">去完成</navigator>
+        </view>
+      </view>
+      <view class="_view data-v-3cfd937c list">
+        <view class="_view data-v-3cfd937c listImg">
+          <image src="../../../static/bindMap.png" mode style="width: 51rpx;height: 51rpx;" class="_image data-v-3cfd937c"></image>
+        </view>
+        <view class="_view data-v-3cfd937c goDo">
+          <view class="_view data-v-3cfd937c left">
+            <text class="_text data-v-3cfd937c">地址绑定</text>
+            <view class="_view data-v-3cfd937c goal">
+              <image src="../../../static/goal.png" mode class="_image data-v-3cfd937c"></image>
+              <text class="_text data-v-3cfd937c">+5体力</text>
+            </view>
+            <text class="_text data-v-3cfd937c">\n绑定我的收货地址，获取体力值</text>
+          </view>
+        </view>
+        <view class="_view data-v-3cfd937c state">
+          <navigator src="#" class="_navigator data-v-3cfd937c">去完成</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

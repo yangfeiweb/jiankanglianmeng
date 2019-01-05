@@ -1,0 +1,116 @@
+<template name="1b467e58">
+  <view class="_view data-v-68f16e7f content">
+    <view class="_view data-v-68f16e7f setting">
+      <view class="_view data-v-68f16e7f setImg">
+        <image src="../../../static/personalBg.png" mode class="_image data-v-68f16e7f"></image>
+      </view>
+      <view class="_view data-v-68f16e7f personal">
+        <view class="_view data-v-68f16e7f pPhoto">
+          <view class="_view data-v-68f16e7f pImg">
+            <image src="../../../static/photo.png" mode class="_image data-v-68f16e7f"></image>
+          </view>
+          <view class="_view data-v-68f16e7f pLeft">
+            <text class="_text data-v-68f16e7f">MyName</text>
+            <image src="../../../static/vip.png" mode class="_image data-v-68f16e7f"></image>
+            <text class="_text data-v-68f16e7f">LV.1\n</text>
+            <text class="_text data-v-68f16e7f">ID:15899999999</text>
+          </view>
+        </view>
+        <view class="_view data-v-68f16e7f life">
+          <view class="_view data-v-68f16e7f lTop">
+            <view class="_view data-v-68f16e7f">
+              <text class="_text data-v-68f16e7f">生命果\n</text>
+              <text class="_text data-v-68f16e7f">66666</text>
+            </view>
+            <view class="_view data-v-68f16e7f">
+              <text class="_text data-v-68f16e7f">余额\n</text>
+              <text class="_text data-v-68f16e7f">666666666</text>
+            </view>
+            <view class="_view data-v-68f16e7f">
+              <text class="_text data-v-68f16e7f">体力\n</text>
+              <text class="_text data-v-68f16e7f">6666</text>
+            </view>
+          </view>
+          <view class="_view data-v-68f16e7f lBottom">
+            <navigator url="../../myCenter/healthBank" class="_navigator data-v-68f16e7f">
+              <image src="../../../static/bankHealth.png" mode class="_image data-v-68f16e7f"></image>
+              <text class="_text data-v-68f16e7f">充值中心</text>
+            </navigator>
+            <navigator url="balance" class="_navigator data-v-68f16e7f">
+              <image src="../../../static/dataWallet.png" mode class="_image data-v-68f16e7f"></image>
+              <text class="_text data-v-68f16e7f">生命果交易</text>
+            </navigator>
+            <navigator url="dataWallet" class="_navigator data-v-68f16e7f">
+              <image src="../../../static/wallet.png" mode class="_image data-v-68f16e7f"></image>
+              <text class="_text data-v-68f16e7f">数据钱包</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-68f16e7f list">
+      <navigator url="../healthyMall/healthyMall" class="_navigator data-v-68f16e7f flexs">
+        <view class="_view data-v-68f16e7f Fleft">
+          <image src="../../../static/healthMall.png" mode class="_image data-v-68f16e7f"></image>
+          <text class="_text data-v-68f16e7f">健康商城</text>
+        </view>
+        <view class="_view data-v-68f16e7f Fright">
+          <text class="_text data-v-68f16e7f">订单更新</text>
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-68f16e7f"></image>
+        </view>
+      </navigator>
+      <navigator url="myCoupon" class="_navigator data-v-68f16e7f flexs">
+        <view class="_view data-v-68f16e7f Fleft">
+          <image src="../../../static/redPacket.png" mode class="_image data-v-68f16e7f"></image>
+          <text class="_text data-v-68f16e7f">红包/卡券</text>
+        </view>
+        <view class="_view data-v-68f16e7f Fright">
+          <text class="_text data-v-68f16e7f">订单更新</text>
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-68f16e7f"></image>
+        </view>
+      </navigator>
+      <navigator url="../myCenter/balance" class="_navigator data-v-68f16e7f flexs">
+        <view class="_view data-v-68f16e7f Fleft">
+          <image src="../../../static/idCard.png" mode class="_image data-v-68f16e7f"></image>
+          <text class="_text data-v-68f16e7f">提现交易</text>
+        </view>
+        <view class="_view data-v-68f16e7f Fright">
+          <text class="_text data-v-68f16e7f">订单更新</text>
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-68f16e7f"></image>
+        </view>
+      </navigator>
+      <navigator url="../myCenter/lifeMall" class="_navigator data-v-68f16e7f flexs">
+        <view class="_view data-v-68f16e7f Fleft noBorder">
+          <image src="../../../static/lifeFrit.png" mode class="_image data-v-68f16e7f"></image>
+          <text class="_text data-v-68f16e7f">生命果商城</text>
+        </view>
+        <view class="_view data-v-68f16e7f Fright">
+          <text class="_text data-v-68f16e7f">订单更新</text>
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-68f16e7f"></image>
+        </view>
+      </navigator>
+      <navigator url="../../healthyMall/shippingAddress" class="_navigator data-v-68f16e7f flexs">
+        <view class="_view data-v-68f16e7f Fleft noBorder">
+          <image src="../../../static/getGoods.png" mode class="_image data-v-68f16e7f"></image>
+          <text class="_text data-v-68f16e7f">收货地址</text>
+        </view>
+        <view class="_view data-v-68f16e7f Fright">
+          <text class="_text data-v-68f16e7f">订单更新</text>
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-68f16e7f"></image>
+        </view>
+      </navigator>
+    </view>
+    <view class="_view data-v-68f16e7f goSetting">
+      <navigator url="../../myCenter/setting" class="_navigator data-v-68f16e7f flexs">
+        <view class="_view data-v-68f16e7f Fleft">
+          <image src="../../../static/sete.png" mode class="_image data-v-68f16e7f"></image>
+          <text class="_text data-v-68f16e7f">设置</text>
+        </view>
+        <view class="_view data-v-68f16e7f Fright">
+          <text class="_text data-v-68f16e7f">新版本</text>
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-68f16e7f"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</template>

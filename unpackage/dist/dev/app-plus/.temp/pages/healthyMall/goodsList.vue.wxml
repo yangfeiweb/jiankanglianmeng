@@ -1,0 +1,35 @@
+<template name="17aa104b">
+  <view class="_view data-v-1c10a15a index">
+    <view class="_view data-v-1c10a15a goodslist">
+      <view class="_view data-v-1c10a15a goodsListItems">
+        <view class="_view data-v-1c10a15a recommendList">
+          <view class="_view data-v-1c10a15a recommendListItem" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'YLb-0-'+index}}" data-comkey="{{$k}}" wx:for="{{timeLimitData}}" wx:for-index="index" wx:for-item="item">
+            <image class="_image data-v-1c10a15a recommendImg" src="{{item.imgUrl}}" mode></image>
+            <view class="_view data-v-1c10a15a recommendListRight">
+              <view class="_view data-v-1c10a15a recommendListRightHeader">
+                <text class="_text data-v-1c10a15a discounts">{{item.discounts}}</text>
+                <text class="_text data-v-1c10a15a goodsName">{{item.goodsName}}</text>
+              </view>
+              <view class="_view data-v-1c10a15a goodsIntro">
+                <text class="_text data-v-1c10a15a discountsIntro">佣金:{{item.discountsIntro}}</text>
+                <text class="_text data-v-1c10a15a sales"> {{item.startTime}} </text>
+              </view>
+              <view class="_view data-v-1c10a15a progressView">
+                <image class="_image data-v-1c10a15a planIcon" src="../../static/planIcon.png" mode></image>
+                <view class="_view data-v-1c10a15a planView">
+                  <progress active backgroundColor="transparent" stroke-width="12" activeColor="#F84722" percent="{{item.percent}}" class="_progress data-v-1c10a15a" />
+                </view>
+              </view>
+              <view class="_view data-v-1c10a15a goodsPrice">
+                <text class="_text data-v-1c10a15a goodsPriceTitle">优惠:</text>
+                <text class="_text data-v-1c10a15a goodsPriceText">￥{{item.price}}</text>
+                <text class="_text data-v-1c10a15a goodsOriginalPrice">￥{{item.originalPrice}}</text>
+                <button class="_button data-v-1c10a15a lookBtn">立即分享</button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

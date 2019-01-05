@@ -1,0 +1,188 @@
+@import "../../common/vendor.wxss";
+
+.discountsList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 44rpx;
+}
+.discountsItem {
+  width: 707rpx;
+  height: 203rpx;
+  background: #fff;
+  position: relative;
+  margin-bottom: 32rpx;
+  box-shadow: 0px 2rpx 31rpx 7rpx rgba(222,222,243,0.21);
+  border-radius: 10rpx;
+}
+.discountsBody {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  height: 203rpx;
+}
+.discountsItemLeft {
+  height: 100%;
+  border-right: 1rpx dashed #E9E9EC;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.discountsItemLeftTop {
+  width: 169rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.moneyIcon {
+  font-size: 34rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(35,164,225,1);
+  line-height: 70rpx;
+}
+.sum {
+  font-size: 60rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight: bold;
+  color: rgba(35,164,225,1);
+  line-height: 70rpx;
+}
+.fullUseOf {
+  font-size: 26rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(35,164,225,1);
+  line-height: 70rpx;
+}
+.discountsItemRight {
+  width: 519rpx;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-left: 18rpx;
+}
+.discountsItemMsg {
+  width: 340rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.msg {
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(51,51,51,1);
+  line-height: 70rpx;
+}
+.endTime {
+  font-size: 26rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(179,179,179,1);
+  line-height: 70rpx;
+}
+.sign {
+  position: absolute;
+  right: 0rpx;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0px 0px 85rpx 85rpx;
+  border-color: transparent transparent #FE5F09 transparent;
+  width: 0px;
+  height: 0px;
+}
+.signText {
+  position: absolute;
+  right: 0rpx;
+  bottom: -5rpx;
+  font-size: 26rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight: bold;
+  color: rgba(255,254,254,1);
+  line-height: 70rpx;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.blue {
+  color: #23A4E1;
+}
+.orange {
+  color: #FE5E0B;
+}
+.orangeTime {
+  color: #FD6403;
+}
+.blueBtn {
+  background: -webkit-linear-gradient(182deg,rgba(115,144,255,1),rgba(67,111,255,1));
+  background: linear-gradient(268deg,rgba(115,144,255,1),rgba(67,111,255,1));
+}
+.orangeBtn {
+  background: -webkit-linear-gradient(182deg,rgba(255,88,18,1),rgba(253,101,2,1));
+  background: linear-gradient(268deg,rgba(255,88,18,1),rgba(253,101,2,1));
+}
+.receiveBtn {
+  width: 166rpx;
+  height: 57rpx;
+  border-radius: 29rpx;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(255,255,255,1);
+  line-height: 57rpx;
+  text-align: center;
+}

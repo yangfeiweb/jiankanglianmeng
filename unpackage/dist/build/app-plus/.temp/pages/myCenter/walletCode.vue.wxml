@@ -1,0 +1,10 @@
+<template name="84b780d4">
+  <view class="_view data-v-ff2261fc content">
+    <view class="_view data-v-ff2261fc title">
+      <text class="_text data-v-ff2261fc">我的数据钱包地址</text>
+      <image src="../../static/walletCode.png" mode class="_image data-v-ff2261fc"></image>
+      <text class="_text data-v-ff2261fc">识别二维码获得钱包地址</text>
+      <button type="default" class="_button data-v-ff2261fc">复制我的钱包地址</button>
+    </view>
+  </view>
+</template>

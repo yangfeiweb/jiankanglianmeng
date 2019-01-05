@@ -1,0 +1,114 @@
+<import src="/components/mpvue-echarts/src/echarts.vue.wxml" />
+<template name="5b8ba18e">
+  <view class="_view data-v-c52dac40 healthySpace">
+    <image class="_image data-v-c52dac40 healthySpaceBg" src="../../../static/healthySpaceBg.png" mode></image>
+    <view class="_view data-v-c52dac40 grace-swiper-msg">
+      <view class="_view data-v-c52dac40 grace-swiper-msg-icon">
+        <image src="../../../static/newsIcon.png" mode="widthFix" class="_image data-v-c52dac40"></image>
+      </view>
+      <swiper vertical="true" autoplay="true" circular="true" interval="3000" class="_swiper data-v-c52dac40">
+        <swiper-item wx:key="index" key="{{index}}" wx:for="{{noticeData}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-c52dac40">
+          <text class="_text data-v-c52dac40">{{item.text}}</text>
+          <text class="_text data-v-c52dac40 move">更多详情>></text>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="_view data-v-c52dac40 mascotView">
+      <view class="_view data-v-c52dac40 energyView">
+        <view class="_view data-v-c52dac40 modeView posi" bindtap="handleProxy" data-eventid="{{'0WQ-0'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-c52dac40 mode"></view>
+          <view class="_view data-v-c52dac40 mode"></view>
+          <view class="_view data-v-c52dac40 mode"></view>
+          <view class="_view data-v-c52dac40 text">
+            <text class="_text data-v-c52dac40 title">体力</text>
+            <text class="_text data-v-c52dac40 val">52%</text>
+          </view>
+        </view>
+        <view class="_view data-v-c52dac40 outputView posi" bindtap="handleProxy" data-eventid="{{'wTe-1'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-c52dac40 circle">
+            <image src="../../../static/download.png" mode class="_image data-v-c52dac40"></image>
+          </view>
+          <view class="_view data-v-c52dac40 text">
+            <text class="_text data-v-c52dac40 title">生产值</text>
+            <text class="_text data-v-c52dac40 val">1H / 82</text>
+          </view>
+        </view>
+        <view class="_view data-v-c52dac40 ifLife posi" bindtap="handleProxy" data-eventid="{{'yfv-2'}}" data-comkey="{{$k}}">
+          <image src="../../../static/ifLifeIcon.png" mode class="_image data-v-c52dac40"></image>
+          <view class="_view data-v-c52dac40 text">
+            <text class="_text data-v-c52dac40 title">生命果</text>
+            <text class="_text data-v-c52dac40 val">4,311,353,154</text>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-c52dac40 mascot">
+        <image src="{{mascotImg}}" mode animation="{{animationDatas}}" bindtouchstart="handleProxy" bindtouchend="handleProxy" data-eventid="{{'ntT-3'}}" data-comkey="{{$k}}" class="_image data-v-c52dac40 {{mascotImg === '../../../static/mascotWalk.png'  ? 'animationImg animation-element mascotImg'  : 'animation-element mascotImg'}}"></image>
+        <view class="_view data-v-c52dac40 tooltip" animation="{{animationData}}" hidden="{{!(tooltipBoxShow)}}">
+          <image src="../../../static/tooltipBg.png" mode class="_image data-v-c52dac40"></image>
+          <text class="_text data-v-c52dac40 tooltipText"> {{tooltipText}} </text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-c52dac40 energyOperateView">
+      <view class="_view data-v-c52dac40 energyOperateViewItem" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'TD6-4-'+index}}" data-comkey="{{$k}}" wx:for="{{energyList}}" wx:for-index="index" wx:for-item="item">
+        <image class="_image data-v-c52dac40 energyBlockImg" src="{{item.imgUrl}}" mode></image>
+        <text class="_text data-v-c52dac40 aenergyBlockText">{{item.name}}</text>
+      </view>
+    </view>
+    <view class="_view data-v-c52dac40 swiperView">
+      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#fff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="_swiper data-v-c52dac40">
+        <swiper-item wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'TDP-5-'+index}}" data-comkey="{{$k}}" wx:for="{{swiperData}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-c52dac40">
+          <view class="_view data-v-c52dac40 swiper-item">
+            <image src="{{item.imgUrl}}" mode class="_image data-v-c52dac40"></image>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="_view data-v-c52dac40 brokenLine">
+      <view class="_view data-v-c52dac40 brokenLineHeader">
+        <view class="_view data-v-c52dac40 brokenLineHeaderItem">
+          <text class="_text data-v-c52dac40 brokenLineTitle">开盘点</text>
+          <text class="_text data-v-c52dac40 line"></text>
+          <text class="_text data-v-c52dac40 brokenLineText">￥{{dealData.start}}</text>
+        </view>
+        <view class="_view data-v-c52dac40 brokenLineHeaderItem">
+          <text class="_text data-v-c52dac40 brokenLineTitle">全天最高</text>
+          <text class="_text data-v-c52dac40 line"></text>
+          <text class="_text data-v-c52dac40 brokenLineText">￥{{dealData.zenith}}</text>
+        </view>
+        <view class="_view data-v-c52dac40 brokenLineHeaderItem">
+          <text class="_text data-v-c52dac40 brokenLineTitle">全天最低</text>
+          <text class="_text data-v-c52dac40 line"></text>
+          <text class="_text data-v-c52dac40 brokenLineText">￥{{dealData.lowest}}</text>
+        </view>
+      </view>
+      <view class="_view data-v-c52dac40 chatView">
+        <view class="_view data-v-c52dac40 canvasView">
+          <template canvasId="line" data="{{...$root['0'], ...$root[$kk+'kWZ-2'],$root}}" is="79400313"></template>
+        </view>
+      </view>
+      <view class="_view data-v-c52dac40 dealView">
+        <view class="_view data-v-c52dac40 dealViewItem">
+          <text class="_text data-v-c52dac40 dealTitle">市场价格</text>
+          <text class="_text data-v-c52dac40 dealLine"></text>
+          <text class="_text data-v-c52dac40 dealText">￥{{dealData.bazaarPrice}}</text>
+        </view>
+        <view class="_view data-v-c52dac40 dealViewItem">
+          <text class="_text data-v-c52dac40 dealTitle">全天交易</text>
+          <text class="_text data-v-c52dac40 dealLine"></text>
+          <text class="_text data-v-c52dac40 dealText">￥{{dealData.dayVolume}}</text>
+        </view>
+        <view class="_view data-v-c52dac40 dealViewItem">
+          <text class="_text data-v-c52dac40 dealTitle">市场总量</text>
+          <text class="_text data-v-c52dac40 dealLine"></text>
+          <text class="_text data-v-c52dac40 dealText">￥{{dealData.bazaarGross}}</text>
+        </view>
+      </view>
+      <view class="_view data-v-c52dac40 timeList">
+        <view wx:key="index" key="{{index}}" data-a="{{index}}" bindtap="handleProxy" data-eventid="{{'3p3-6-'+index}}" data-comkey="{{$k}}" wx:for="{{timeList}}" wx:for-index="index" wx:for-item="item" class="_view data-v-c52dac40 {{currentTime === index ? 'current timeListItem' : 'timeListItem'}}">
+          <text class="_text data-v-c52dac40 {{currentTime === index ? 'timeText currentText' : 'timeText'}}"> {{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

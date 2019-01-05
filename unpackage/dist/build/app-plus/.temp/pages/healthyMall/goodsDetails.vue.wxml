@@ -1,0 +1,147 @@
+<import src="/components/number-box.vue.wxml" />
+<import src="/components/shareModel.vue.wxml" />
+<template name="15549192">
+  <view class="_view data-v-70a523a8 index">
+    <swiper class="_swiper data-v-70a523a8 swiper" indicator-dots="true" indicator-color="#fff" indicator-active-color="#88CB25">
+      <swiper-item class="_swiper-item data-v-70a523a8 swiperItem" wx:key="key" key="{{key}}" wx:for="{{imgUrls}}" wx:for-index="key" wx:for-item="img">
+        <image class="_image data-v-70a523a8 swiperItemImg" src="{{img}}"></image>
+      </swiper-item>
+    </swiper>
+    <image class="_image data-v-70a523a8 share" src="../../static/share.png" mode bindtap="handleProxy" data-eventid="{{'Wwj-0'}}" data-comkey="{{$k}}"></image>
+    <view class="_view data-v-70a523a8 goodsIntroduce">
+      <view class="_view data-v-70a523a8 goodsName">
+        <text class="_text data-v-70a523a8 goodsNameText">{{goodsData.name}}</text>
+        <view class="_view data-v-70a523a8 collect">
+          <image wx:if="{{goodsData.goodsCollectShow}}" src="../../static/collectChecked.png" mode bindtap="handleProxy" data-eventid="{{'UGC-2'}}" data-comkey="{{$k}}" class="_image data-v-70a523a8"></image>
+          <image wx:else src="../../static/collect.png" bindtap="handleProxy" mode data-eventid="{{'q0u-1'}}" data-comkey="{{$k}}" class="_image data-v-70a523a8"></image>
+          <text class="_text data-v-70a523a8">{{goodsCollectText}}</text>
+        </view>
+      </view>
+      <view class="_view data-v-70a523a8 priceView">
+        <text class="_text data-v-70a523a8 moneyIcon">￥</text>
+        <text class="_text data-v-70a523a8 price">{{goodsData.price}}</text>
+        <text class="_text data-v-70a523a8 originalCost">￥{{goodsData.originalCost}}元</text>
+      </view>
+      <view class="_view data-v-70a523a8 infoView">
+        <text class="_text data-v-70a523a8 coupon">领劵:{{goodsData.coupon}}元</text>
+        <view class="_view data-v-70a523a8 goodsInfo">
+          <text class="_text data-v-70a523a8 express goodsInfoStyle">快递: {{goodsData.express}}</text>
+          <text class="_text data-v-70a523a8 sales goodsInfoStyle">月销: {{goodsData.sales}}笔</text>
+          <text class="_text data-v-70a523a8 site goodsInfoStyle">{{goodsData.site}}</text>
+        </view>
+      </view>
+      <view class="_view data-v-70a523a8 argumentView">
+        <view class="_view data-v-70a523a8 argumentViewList argumentViewListRight">
+          <image class="_image data-v-70a523a8 moneyIcon2" src="../../static/moneyIcon.png" mode></image>
+          <text class="_text data-v-70a523a8 commissionTitle">可得商品佣金: </text>
+          <text class="_text data-v-70a523a8 commission">￥{{goodsData.commission}}元</text>
+        </view>
+        <view class="_view data-v-70a523a8 argumentViewList">
+          <text class="_text data-v-70a523a8 title">产品参数</text>
+          <text class="_text data-v-70a523a8 text">{{goodsData.parameter}}</text>
+          <image class="_image data-v-70a523a8 selectMove" src="../../static/detailsSelect.png" mode></image>
+        </view>
+        <view class="_view data-v-70a523a8 argumentViewList" bindtap="handleProxy" data-eventid="{{'Sa7-3'}}" data-comkey="{{$k}}">
+          <text class="_text data-v-70a523a8 title">商品规格</text>
+          <text class="_text data-v-70a523a8 text">{{goodsData.spec}}</text>
+          <image class="_image data-v-70a523a8 selectMove" src="../../static/detailsSelect.png" mode></image>
+        </view>
+        <view class="_view data-v-70a523a8 argumentViewList">
+          <view class="_view data-v-70a523a8 describe">
+            <text class="_text data-v-70a523a8 title">宝贝描述:</text>
+            <text class="_text data-v-70a523a8 text">{{goodsData.describe}}</text>
+          </view>
+          <view class="_view data-v-70a523a8 describe">
+            <text class="_text data-v-70a523a8 title">卖家服务:</text>
+            <text class="_text data-v-70a523a8 text">{{goodsData.serve}}</text>
+          </view>
+          <view class="_view data-v-70a523a8 describe">
+            <text class="_text data-v-70a523a8 title">物流服务:</text>
+            <text class="_text data-v-70a523a8 text">{{goodsData.expressServe}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-70a523a8 babyDetails">
+        <view class="_view data-v-70a523a8 babyDetailsTitle" bindtap="handleProxy" data-eventid="{{'GrB-4'}}" data-comkey="{{$k}}">
+          <text class="_text data-v-70a523a8">宝贝详情</text>
+          <image src="../../static/arrowsBottom.png" mode class="_image data-v-70a523a8"></image>
+        </view>
+        <view hidden="{{!(unfoldDetailsShow)}}" class="_view data-v-70a523a8 babyDetailsImgView" wx:key="index" key="{{index}}" wx:for="{{goodsData.particulars}}" wx:for-index="index" wx:for-item="item">
+          <image class="_image data-v-70a523a8 babyDetailsImg" src="{{item}}" mode></image>
+        </view>
+      </view>
+      <view class="_view data-v-70a523a8 HotGoods">
+        <view class="_view data-v-70a523a8 HotGoodsTitle">
+          <view class="_view data-v-70a523a8 HotGoodsCenter">
+            <text class="_text data-v-70a523a8 line">-</text>
+            <text class="_text data-v-70a523a8 text">推荐商品</text>
+            <text class="_text data-v-70a523a8 line">-</text>
+          </view>
+          <text class="_text data-v-70a523a8 inABatch" bindtap="handleProxy" data-eventid="{{'A4Z-5'}}" data-comkey="{{$k}}">换一批</text>
+        </view>
+        <view class="_view data-v-70a523a8 hotGoodsList">
+          <view class="_view data-v-70a523a8 hotGoodsListItem" wx:key="index" key="{{index}}" wx:for="{{recommendListData}}" wx:for-index="index" wx:for-item="item">
+            <image class="_image data-v-70a523a8 recommendImg" src="{{item.imgUrl}}" mode></image>
+            <view class="_view data-v-70a523a8 hotGoodsListItemName">
+              <text class="_text data-v-70a523a8 discounts">{{item.discounts}}</text>
+              <text class="_text data-v-70a523a8 hotName">{{item.goodsName}}</text>
+            </view>
+            <view class="_view data-v-70a523a8 goodsIntro">
+              <text class="_text data-v-70a523a8 discountsIntro">佣金:{{item.discountsIntro}}</text>
+              <text class="_text data-v-70a523a8 hotsales"> 销量:{{item.sales}} </text>
+            </view>
+            <view class="_view data-v-70a523a8 goodsPrice">
+              <text class="_text data-v-70a523a8 goodsPriceTitle">优惠:</text>
+              <text class="_text data-v-70a523a8 goodsPriceIcon">￥</text>
+              <text class="_text data-v-70a523a8 goodsPriceText">{{item.price}}</text>
+              <text class="_text data-v-70a523a8 goodsOriginalPrice">￥{{item.originalPrice}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-70a523a8 mask" hidden="{{!(showMask)}}" bindtap="handleProxy" data-eventid="{{'N81-6'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-70a523a8 popup popup-bottom" hidden="{{!(showDetailsState)}}">
+      <view class="_view data-v-70a523a8 goodsPopupTop">
+        <image class="_image data-v-70a523a8 goodsPopupTopImg" src="{{popupData.imgUrl}}" mode></image>
+        <view class="_view data-v-70a523a8 goodsPopupTopText">
+          <text class="_text data-v-70a523a8 popupPrice">￥{{popupData.price}}</text>
+          <text class="_text data-v-70a523a8 popupStock">库存{{popupData.stock}}件</text>
+          <text class="_text data-v-70a523a8 popupStock" hidden="{{!(ifSelectType)}}">请选择大小</text>
+        </view>
+      </view>
+      <view class="_view data-v-70a523a8 sizeView">
+        <text class="_text data-v-70a523a8 sizeTitle">大小</text>
+        <view class="_view data-v-70a523a8 sizeItem">
+          <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'tdd-7-'+index}}" data-comkey="{{$k}}" wx:for="{{goodsData.spec}}" wx:for-index="index" wx:for-item="item" class="_view data-v-70a523a8 {{item.checked === 0 ? 'sizeItemBtn active' : 'sizeItemBtn'}}">
+          {{item.size}} </view>
+        </view>
+      </view>
+      <view class="_view data-v-70a523a8 buyNum">
+        <text class="_text data-v-70a523a8 buyNumTitle">购买数量</text>
+        <view class="_view data-v-70a523a8 buyNumInput">
+          <template bindupdate="handleProxy" data-eventid="{{'HsI-8'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'6Dq-1'],$root}}" is="0201f6da"></template>
+        </view>
+      </view>
+      <view class="_view data-v-70a523a8 popupBtn">
+        <view class="_view data-v-70a523a8 addCartBtn" bindtap="handleProxy" data-eventid="{{'qGu-9'}}" data-comkey="{{$k}}"> 加入购物车 </view>
+        <view class="_view data-v-70a523a8 buyBtn" bindtap="handleProxy" data-eventid="{{'wJV-10'}}" data-comkey="{{$k}}"> 立即购买 </view>
+      </view>
+    </view>
+    <view class="_view data-v-70a523a8 detailsBase">
+      <view class="_view data-v-70a523a8 detailsBaseCart" bindtap="handleProxy" data-eventid="{{'ZmO-11'}}" data-comkey="{{$k}}">
+        <image src="../../static/cartRight.png" mode class="_image data-v-70a523a8"></image>
+        <text class="_text data-v-70a523a8 cartGoodsNum">{{goodsData.cartGoodsNum}}</text>
+        <text class="_text data-v-70a523a8">购物车</text>
+      </view>
+      <view class="_view data-v-70a523a8 detailsBaseCollect">
+        <image wx:if="{{goodsData.collectShopShow}}" bindtap="handleProxy" src="../../static/collectChecked.png" mode data-eventid="{{'LUa-13'}}" data-comkey="{{$k}}" class="_image data-v-70a523a8"></image>
+        <image wx:else bindtap="handleProxy" src="../../static/collect.png" mode data-eventid="{{'gll-12'}}" data-comkey="{{$k}}" class="_image data-v-70a523a8"></image>
+        <text class="_text data-v-70a523a8">{{shopCollectText}}</text>
+      </view>
+      <view class="_view data-v-70a523a8 addCartBtn" bindtap="handleProxy" data-eventid="{{'Jg4-14'}}" data-comkey="{{$k}}"> 加入购物车 </view>
+      <view class="_view data-v-70a523a8 buyBtn" bindtap="handleProxy" data-eventid="{{'SuQ-15'}}" data-comkey="{{$k}}"> 立即购买 </view>
+    </view>
+    <template data="{{...$root['0'], ...$root[$kk+'kiV-2'],$root}}" is="1a392ac6"></template>
+  </view>
+</template>

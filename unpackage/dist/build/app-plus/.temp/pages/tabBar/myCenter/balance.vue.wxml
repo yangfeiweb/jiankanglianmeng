@@ -1,0 +1,60 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="cdba4418">
+  <view class="_view data-v-61d5cced content">
+    <view class="_view data-v-61d5cced balance">
+      <view class="_view data-v-61d5cced img">
+        <image src="../../../static/personalBg.png" mode class="_image data-v-61d5cced"></image>
+      </view>
+      <view class="_view data-v-61d5cced money">
+        <text class="_text data-v-61d5cced">0.00\n</text>
+        <text class="_text data-v-61d5cced">余额(元)</text>
+      </view>
+    </view>
+    <view class="_view data-v-61d5cced recharge">
+      <navigator url="recharge" class="_navigator data-v-61d5cced withdraw">
+        <view class="_view data-v-61d5cced">
+          <image src="../../../static/recharge.png" mode class="_image data-v-61d5cced"></image>
+          <text class="_text data-v-61d5cced">充值</text>
+        </view>
+        <view class="_view data-v-61d5cced">
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-61d5cced"></image>
+        </view>
+      </navigator>
+      <navigator url="withdraw" class="_navigator data-v-61d5cced withdraw">
+        <view class="_view data-v-61d5cced">
+          <image src="../../../static/withardw.png" mode class="_image data-v-61d5cced"></image>
+          <text class="_text data-v-61d5cced">提现</text>
+        </view>
+        <view class="_view data-v-61d5cced">
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-61d5cced"></image>
+        </view>
+      </navigator>
+    </view>
+    <view class="_view data-v-61d5cced list">
+      <view class="_view data-v-61d5cced detail">
+        <view class="_view data-v-61d5cced">
+          <text class="_text data-v-61d5cced">余额明细</text>
+        </view>
+        <view class="_view data-v-61d5cced">
+          <text class="_text data-v-61d5cced">查看全部</text>
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-61d5cced"></image>
+        </view>
+      </view>
+      <view class="_view data-v-61d5cced scroll-view">
+        <block>
+          <view class="_view data-v-61d5cced title" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+            <view class="_view data-v-61d5cced">
+              <text class="_text data-v-61d5cced">+100\n</text>
+              <text class="_text data-v-61d5cced">充值</text>
+            </view>
+            <view class="_view data-v-61d5cced">
+              <text class="_text data-v-61d5cced">成功\n</text>
+              <text class="_text data-v-61d5cced">2018.10.31.14:41</text>
+            </view>
+          </view>
+          <template data="{{...$root['0'], ...$root[$kk+'Kee-0'],$root}}" is="53a2a299"></template>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

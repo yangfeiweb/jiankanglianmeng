@@ -1,0 +1,1 @@
+<import src="/pages/healthyMall/settleAccount.vue.wxml" /><template is="2c5f71ce" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/tradingMarket/tradingMarket.vue.wxml" /><template is="df0723a4" data="{{ ...$root['0'], $root }}"/>

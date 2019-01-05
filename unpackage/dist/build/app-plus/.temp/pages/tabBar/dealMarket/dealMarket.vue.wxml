@@ -1,0 +1,87 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="42dd0119">
+  <view class="_view data-v-45ffde80 content">
+    <view class="_view data-v-45ffde80 scsj">
+      <view class="_view data-v-45ffde80 contentTop">
+        <view class="_view data-v-45ffde80 ctLeft">
+          <image wx:if="{{orderState!=1}}" src="../../../static/manageUn.png" mode bindtap="handleProxy" data-state="2" data-eventid="{{'YUe-0'}}" data-comkey="{{$k}}" class="_image data-v-45ffde80"></image>
+          <image wx:if="{{orderState==1}}" src="../../../static/manageSelect.png" mode bindtap="handleProxy" data-state="1" data-eventid="{{'ODS-1'}}" data-comkey="{{$k}}" class="_image data-v-45ffde80"></image>
+        </view>
+        <view class="_view data-v-45ffde80 ctLeft">
+          <image wx:if="{{orderState1!=1}}" src="../../../static/myOrderSelect.png" mode bindtap="handleProxy" data-states="1" data-eventid="{{'CpU-2'}}" data-comkey="{{$k}}" class="_image data-v-45ffde80"></image>
+          <image wx:if="{{orderState1==1}}" src="../../../static/myOrderUn.png" mode bindtap="handleProxy" data-states="2" data-eventid="{{'WL4-3'}}" data-comkey="{{$k}}" class="_image data-v-45ffde80"></image>
+        </view>
+      </view>
+      <view class="_view data-v-45ffde80 classify">
+        <view class="_view data-v-45ffde80 threeClass">
+          <view class="_view data-v-45ffde80 {{[type == 1 && isActive ? 'select' : '']}}" bindtap="handleProxy" data-type="1" data-eventid="{{'fqA-4'}}" data-comkey="{{$k}}">
+            <text class="_text data-v-45ffde80">所有</text>
+          </view>
+          <view class="_view data-v-45ffde80 {{[type == 2 && isActive ? 'select' : '']}}" bindtap="handleProxy" data-type="2" data-eventid="{{'2Zi-5'}}" data-comkey="{{$k}}">
+            <image src="../../../static/circle1.png" mode class="_image data-v-45ffde80"></image>
+            <text class="_text data-v-45ffde80">售卖</text>
+          </view>
+          <view class="_view data-v-45ffde80 {{[type == 3 && isActive ? 'select' : '']}}" bindtap="handleProxy" data-type="3" data-eventid="{{'J9k-6'}}" data-comkey="{{$k}}">
+            <image src="../../../static/circle.png" mode class="_image data-v-45ffde80"></image>
+            <text class="_text data-v-45ffde80">完成</text>
+          </view>
+        </view>
+        <view class="_view data-v-45ffde80 screen">
+          <view id="time" bindtap="handleProxy" data-selected="1" data-eventid="{{'id9-7'}}" data-comkey="{{$k}}" class="_view data-v-45ffde80 {{[selected == 1 && isActive ? 'select' : '']}}">
+            <text class="_text data-v-45ffde80">时间</text>
+            <image wx:if="{{selecteds==2}}" src="../../../static/botArrow.png" mode class="_image data-v-45ffde80"></image>
+            <image wx:if="{{selecteds==5}}" src="../../../static/topArrow.png" mode class="_image data-v-45ffde80"></image>
+          </view>
+          <view id="time" bindtap="handleProxy" data-selected="2" data-eventid="{{'fFd-8'}}" data-comkey="{{$k}}" class="_view data-v-45ffde80 {{[selected == 2 && isActive ? 'select' : '']}}">
+            <text class="_text data-v-45ffde80">数量</text>
+            <image wx:if="{{selecteds1==3}}" src="../../../static/botArrow.png" mode class="_image data-v-45ffde80"></image>
+            <image wx:if="{{selecteds1==6}}" src="../../../static/topArrow.png" mode class="_image data-v-45ffde80"></image>
+          </view>
+          <view id="time" bindtap="handleProxy" data-selected="3" data-eventid="{{'wr3-9'}}" data-comkey="{{$k}}" class="_view data-v-45ffde80 {{[selected == 3 && isActive ? 'select' : '']}}">
+            <text class="_text data-v-45ffde80">单价</text>
+            <image wx:if="{{selecteds2==4}}" src="../../../static/botArrow.png" mode class="_image data-v-45ffde80"></image>
+            <image wx:if="{{selecteds2==7}}" src="../../../static/topArrow.png" mode class="_image data-v-45ffde80"></image>
+          </view>
+          <view id="time" bindtap="handleProxy" data-selected="4" data-eventid="{{'QU1-10'}}" data-comkey="{{$k}}" class="_view data-v-45ffde80 {{[selected == 4 && isActive ? 'select' : '']}}">
+            <text class="_text data-v-45ffde80">类型</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-45ffde80 contentar">
+      <view class="_view data-v-45ffde80 scroll-view">
+        <view id="list" bindtap="handleProxy" data-indexs="{{index}}" wx:key="index" key="{{index}}" data-eventid="{{'uUE-12-'+index}}" data-comkey="{{$k}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value" class="_view data-v-45ffde80 {{indexs == index ? 'active' : ''}}">
+          <view class="_view data-v-45ffde80 nyr">
+            <image src="../../../static/circle.png" mode class="_image data-v-45ffde80"></image>
+            <text n class="_text data-v-45ffde80">10-23 9:09\n</text>
+            <text class="_text data-v-45ffde80">正在出售</text>
+          </view>
+          <view class="_view data-v-45ffde80 num">
+            <text class="_text data-v-45ffde80">60个</text>
+          </view>
+          <view class="_view data-v-45ffde80 money">
+            <text class="_text data-v-45ffde80">21.00元/个\n</text>
+            <text class="_text data-v-45ffde80">1,260.00元</text>
+          </view>
+          <view class="_view data-v-45ffde80 goBuy">
+            <text class="_text data-v-45ffde80">立即购买</text>
+            <image wx:if="{{type==2&&indexs==index}}" src="../../../static/delete.png" mode bindtap="handleProxy" data-eventid="{{'9Dd-11-'+index}}" data-comkey="{{$k}}" class="_image data-v-45ffde80"></image>
+          </view>
+        </view>
+        <template data="{{...$root['0'], ...$root[$kk+'N6V-0'],$root}}" is="53a2a299"></template>
+      </view>
+    </view>
+    <view class="_view data-v-45ffde80 toast" wx:if="{{toast}}">
+      <view class="_view data-v-45ffde80 delOrder">
+        <view class="_view data-v-45ffde80 top">
+          <image src="../../../static/delOrder.png" mode class="_image data-v-45ffde80"></image>
+          <text class="_text data-v-45ffde80">确定取消订单</text>
+        </view>
+        <view class="_view data-v-45ffde80 bottom">
+          <text bindtap="handleProxy" data-eventid="{{'RrG-13'}}" data-comkey="{{$k}}" class="_text data-v-45ffde80">确定</text>
+          <text bindtap="handleProxy" data-eventid="{{'cgD-14'}}" data-comkey="{{$k}}" class="_text data-v-45ffde80">取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

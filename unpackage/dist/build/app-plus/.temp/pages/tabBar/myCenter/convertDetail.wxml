@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/myCenter/convertDetail.vue.wxml" /><template is="33799afc" data="{{ ...$root['0'], $root }}"/>

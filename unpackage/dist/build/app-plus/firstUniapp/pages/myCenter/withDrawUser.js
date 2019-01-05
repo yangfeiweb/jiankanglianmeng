@@ -1,0 +1,13 @@
+
+      !(function(){
+        var uniAppViewReadyCallback = function(){
+          setCssToHead([[2,1],"body{width:100%;height:100%;box-sizing:border-box;background-color:#fff}\nbody .",[1],"content wx-scroll-view::-webkit-scrollbar{width:0;height:0;color:transparent}\n.",[1],"content{width:100%;background-color:#f4f4f4;padding-top:",[0,10],"}\n.",[1],"content wx-scroll-view{height:100%;width:100%;background-color:#fff}\n.",[1],"bank{width:",[0,642],";height:",[0,312],";background:-webkit-linear-gradient(183deg,#746eff,#55b2f4);background:linear-gradient(267deg,#746eff,#55b2f4);box-shadow:",[0,0]," ",[0,3]," ",[0,32]," ",[0,0]," #d0cfcf;border-radius:",[0,25],";margin:",[0,109]," ",[0,56]," 0 ",[0,52],"}\n.",[1],"bank .",[1],"top{height:",[0,90],";line-height:",[0,90],";display:-webkit-box;display:-webkit-flex;display:flex;width:100%;border-bottom:",[0,1]," solid #efefef;padding:0 ",[0,22],";box-sizing:border-box}\n.",[1],"bank .",[1],"top wx-view:first-of-type{-webkit-box-flex:1.5;-webkit-flex:1.5;flex:1.5}\n.",[1],"bank .",[1],"top wx-view:first-of-type wx-image{width:",[0,38],";height:",[0,38],";vertical-align:middle;margin-right:",[0,6],"}\n.",[1],"bank .",[1],"top wx-view:first-of-type wx-text{color:#fff;font-size:",[0,28],"}\n.",[1],"bank .",[1],"top wx-view:nth-of-type(2) wx-text{color:#fff;font-size:",[0,26],"}\n.",[1],"bank .",[1],"name{height:",[0,221],";padding-top:",[0,60],";box-sizing:border-box;padding-left:",[0,174],"}\n.",[1],"bank .",[1],"name wx-text{color:#fff;font-size:",[0,30],"}\n.",[1],"bgImg{background-color:#fff;width:100%;text-align:center;padding-top:",[0,198],"}\n.",[1],"bgImg wx-image{width:",[0,486],";height:",[0,325],";display:block;margin:0 auto;margin-bottom:",[0,70],"}\n.",[1],"bgImg wx-text{color:#908f8f;font-size:",[0,30],"}\n.",[1],"bgImg .",[1],"_button{width:",[0,604],";height:",[0,82],";background:#519ef7;box-shadow:",[0,0]," ",[0,3]," ",[0,32]," ",[0,0]," #a9cffb;border-radius:",[0,5],";text-align:center;line-height:",[0,82],";color:#fff;font-size:",[0,30],"}\n",],undefined,{path:"./pages/myCenter/withDrawUser.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/myCenter/withDrawUser.wxml') } }));
+        }
+        if(window.__uniAppViewReady__){
+          uniAppViewReadyCallback()
+        }else{
+          document.addEventListener('uniAppViewReady',uniAppViewReadyCallback)
+        }
+      })();
+      

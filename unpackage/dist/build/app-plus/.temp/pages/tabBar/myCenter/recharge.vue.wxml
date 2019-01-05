@@ -1,0 +1,82 @@
+<template name="aae36982">
+  <view class="_view data-v-0f8d8934 content">
+    <view class="_view data-v-0f8d8934 title">
+      <view class="_view data-v-0f8d8934 top"> 选择支付方式 </view>
+      <view class="_view data-v-0f8d8934 list">
+        <view class="_view data-v-0f8d8934 img1">
+          <image src="../../../static/bankPay.png" mode class="_image data-v-0f8d8934"></image>
+          <text class="_text data-v-0f8d8934">银行卡支付</text>
+        </view>
+        <view class="_view data-v-0f8d8934">
+          <image data-type="1" wx:if="{{select&&type!=1}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'hTD-0'}}" data-comkey="{{$k}}" class="_image data-v-0f8d8934"></image>
+          <image wx:if="{{select&&type==1}}" src="../../../static/selectY.png" mode class="_image data-v-0f8d8934"></image>
+        </view>
+      </view>
+      <view class="_view data-v-0f8d8934 list">
+        <view class="_view data-v-0f8d8934 img2">
+          <image src="../../../static/aliPay.png" mode class="_image data-v-0f8d8934"></image>
+          <text class="_text data-v-0f8d8934">支付包支付</text>
+        </view>
+        <view class="_view data-v-0f8d8934">
+          <image data-type="2" wx:if="{{select&&type!=2}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'nmx-1'}}" data-comkey="{{$k}}" class="_image data-v-0f8d8934"></image>
+          <image wx:if="{{select&&type==2}}" src="../../../static/selectY.png" mode class="_image data-v-0f8d8934"></image>
+        </view>
+      </view>
+      <view class="_view data-v-0f8d8934 list">
+        <view class="_view data-v-0f8d8934 img3">
+          <image src="../../../static/wxPay.png" mode class="_image data-v-0f8d8934"></image>
+          <text class="_text data-v-0f8d8934">微信支付</text>
+        </view>
+        <view class="_view data-v-0f8d8934">
+          <image data-type="3" wx:if="{{select&&type!=3}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'HKX-2'}}" data-comkey="{{$k}}" class="_image data-v-0f8d8934"></image>
+          <image wx:if="{{select&&type==3}}" src="../../../static/selectY.png" mode class="_image data-v-0f8d8934"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-0f8d8934 title">
+      <view class="_view data-v-0f8d8934 top"> 选择支付方式 </view>
+      <view class="_view data-v-0f8d8934 edu">
+        <view class="_view data-v-0f8d8934 leftMoney">
+          <text class="_text data-v-0f8d8934">1000</text>
+          <text class="_text data-v-0f8d8934">现金+</text>
+          <text class="_text data-v-0f8d8934">1000</text>
+          <text class="_text data-v-0f8d8934">成本金额度</text>
+        </view>
+        <view class="_view data-v-0f8d8934">
+          <text class="_text data-v-0f8d8934">￥1000</text>
+          <image data-type1="1" wx:if="{{select&&type1!=1}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'XTg-3'}}" data-comkey="{{$k}}" class="_image data-v-0f8d8934"></image>
+          <image wx:if="{{select&&type1==1}}" src="../../../static/selectY.png" mode class="_image data-v-0f8d8934"></image>
+        </view>
+      </view>
+      <view class="_view data-v-0f8d8934 edu">
+        <view class="_view data-v-0f8d8934 leftMoney">
+          <text class="_text data-v-0f8d8934">3000</text>
+          <text class="_text data-v-0f8d8934">现金+</text>
+          <text class="_text data-v-0f8d8934">3000</text>
+          <text class="_text data-v-0f8d8934">成本金额度</text>
+        </view>
+        <view class="_view data-v-0f8d8934">
+          <text class="_text data-v-0f8d8934">￥3000</text>
+          <image data-type1="2" wx:if="{{select&&type1!=2}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'W1n-4'}}" data-comkey="{{$k}}" class="_image data-v-0f8d8934"></image>
+          <image wx:if="{{select&&type1==2}}" src="../../../static/selectY.png" mode class="_image data-v-0f8d8934"></image>
+        </view>
+      </view>
+      <view class="_view data-v-0f8d8934 edu">
+        <view class="_view data-v-0f8d8934 leftMoney">
+          <text class="_text data-v-0f8d8934">5000</text>
+          <text class="_text data-v-0f8d8934">现金+</text>
+          <text class="_text data-v-0f8d8934">5000</text>
+          <text class="_text data-v-0f8d8934">成本金额度</text>
+        </view>
+        <view class="_view data-v-0f8d8934">
+          <text class="_text data-v-0f8d8934">￥5000</text>
+          <image data-type1="3" wx:if="{{select&&type1!=3}}" src="../../../static/unSelect.png" mode bindtap="handleProxy" data-eventid="{{'cqg-5'}}" data-comkey="{{$k}}" class="_image data-v-0f8d8934"></image>
+          <image wx:if="{{select&&type1==3}}" src="../../../static/selectY.png" mode class="_image data-v-0f8d8934"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-0f8d8934 pay">
+      <button type="default" class="_button data-v-0f8d8934">充值</button>
+    </view>
+  </view>
+</template>

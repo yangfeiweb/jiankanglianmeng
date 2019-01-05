@@ -1,0 +1,12 @@
+<template name="df038228">
+  <view class="_view data-v-44c23892 shopEnter">
+    <image class="_image data-v-44c23892 shopEnterBg" src="../../static/shopEnterBg.png" mode></image>
+    <text class="_text data-v-44c23892 ruleText" bindtap="handleProxy" data-eventid="{{'Nof-0'}}" data-comkey="{{$k}}">活动规则</text>
+    <navigator class="_navigator data-v-44c23892 concatService" url="/pages/healthyMall/service">立即联系客服</navigator>
+    <view class="_view data-v-44c23892 mask" hidden="{{!(ruleMaskShow)}}" bindtap="handleProxy" data-eventid="{{'UnL-1'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-44c23892 popup popup-middle" hidden="{{!(rulePopupShow)}}">
+      <image class="_image data-v-44c23892 ruleBg" src="../../static/ruleBg.png" mode></image>
+      <text class="_text data-v-44c23892 closeBtn" bindtap="handleProxy" data-eventid="{{'So1-2'}}" data-comkey="{{$k}}">关闭</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/myCenter/withdraw.vue.wxml" /><template is="e84423bc" data="{{ ...$root['0'], $root }}"/>

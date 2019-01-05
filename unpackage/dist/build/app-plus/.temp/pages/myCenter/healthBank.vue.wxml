@@ -1,0 +1,133 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="091473c8">
+  <view class="_view data-v-6841f998 content">
+    <scroll-view scroll-y="yrue" class="_scroll-view data-v-6841f998">
+      <view class="_view data-v-6841f998 topImg">
+        <view class="_view data-v-6841f998 bgimg">
+          <image src="../../../static/healthbg.png" mode class="_image data-v-6841f998"></image>
+        </view>
+        <view class="_view data-v-6841f998 money">
+          <view class="_view data-v-6841f998 moneyTop">
+            <text class="_text data-v-6841f998">总金额(元)\n</text>
+            <text class="_text data-v-6841f998">￥66666,66</text>
+          </view>
+          <view class="_view data-v-6841f998 moneyBottom">
+            <view class="_view data-v-6841f998">
+              <text class="_text data-v-6841f998">6666.66\n</text>
+              <text class="_text data-v-6841f998">可用金额</text>
+            </view>
+            <view class="_view data-v-6841f998">
+              <text class="_text data-v-6841f998">667666.66\n</text>
+              <text class="_text data-v-6841f998">理财本金</text>
+            </view>
+            <view class="_view data-v-6841f998">
+              <text class="_text data-v-6841f998">66656.66\n</text>
+              <text class="_text data-v-6841f998">预期利息</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-6841f998 matters">
+        <navigator class="_navigator data-v-6841f998">
+          <image src="../../../static/idCard.png" mode class="_image data-v-6841f998"></image>
+          <text class="_text data-v-6841f998">资金转账</text>
+        </navigator>
+        <navigator class="_navigator data-v-6841f998">
+          <image src="../../../static/bankHealth.png" mode class="_image data-v-6841f998"></image>
+          <text class="_text data-v-6841f998">充值记录</text>
+        </navigator>
+        <navigator url="myMatters" class="_navigator data-v-6841f998">
+          <image src="../../../static/common.png" mode class="_image data-v-6841f998"></image>
+          <text class="_text data-v-6841f998">充值介绍</text>
+        </navigator>
+      </view>
+      <view class="_view data-v-6841f998 earings">
+        <view class="_view data-v-6841f998 title"> 收益明细 </view>
+        <view class="_view data-v-6841f998 earing">
+          <navigator class="_navigator data-v-6841f998">
+            <text class="_text data-v-6841f998">+666\n</text>
+            <text class="_text data-v-6841f998">本金金额</text>
+          </navigator>
+          <navigator class="_navigator data-v-6841f998">
+            <text class="_text data-v-6841f998">+88.00\n</text>
+            <text class="_text data-v-6841f998">昨日收益</text>
+          </navigator>
+          <navigator class="_navigator data-v-6841f998">
+            <text class="_text data-v-6841f998">+66.66\n</text>
+            <text class="_text data-v-6841f998">总收益</text>
+          </navigator>
+        </view>
+      </view>
+      <view class="_view data-v-6841f998 recommend">
+        <view class="_view data-v-6841f998 title"> 充值方案 </view>
+        <view class="_view data-v-6841f998 list">
+          <view class="_view data-v-6841f998 context" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+            <view class="_view data-v-6841f998 cTop">
+              <text class="_text data-v-6841f998">1000元充值卡</text>
+              <text bindtap="handleProxy" data-eventid="{{'kZZ-0-'+index}}" data-comkey="{{$k}}" class="_text data-v-6841f998">充值</text>
+            </view>
+            <view class="_view data-v-6841f998 cBottom">
+              <view class="_view data-v-6841f998">
+                <text class="_text data-v-6841f998">1000\n</text>
+                <text class="_text data-v-6841f998">商品成本价额度</text>
+              </view>
+              <view class="_view data-v-6841f998">
+                <text class="_text data-v-6841f998">1/1\n</text>
+                <text class="_text data-v-6841f998">充值次数</text>
+              </view>
+              <view class="_view data-v-6841f998">
+                <text class="_text data-v-6841f998">150\n</text>
+                <text class="_text data-v-6841f998">体力</text>
+              </view>
+            </view>
+          </view>
+          <template data="{{...$root['0'], ...$root[$kk+'feH-0'],$root}}" is="53a2a299"></template>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="_view data-v-6841f998 toast" wx:if="{{toast}}">
+      <view class="_view data-v-6841f998 main">
+        <view class="_view data-v-6841f998 sallBuy">
+          <view class="_view data-v-6841f998 sTop">
+            <view class="_view data-v-6841f998 sImg">
+              <image src="../../../static/photo.png" mode class="_image data-v-6841f998"></image>
+            </view>
+            <view class="_view data-v-6841f998 sTitle">
+              <text class="_text data-v-6841f998">MyName</text>
+            </view>
+          </view>
+          <view class="_view data-v-6841f998 tTitle"> 充值中心 </view>
+          <view class="_view data-v-6841f998 sMiddle">
+            <view class="_view data-v-6841f998 inputTitle">
+              <view class="_view data-v-6841f998">
+                <text class="_text data-v-6841f998">买入金额\n</text>
+                <input placeholder-class="place-holder" type="number" placeholder="输入买入金额" value="{{sallNum}}" bindinput="handleProxy" data-eventid="{{'UZB-1'}}" data-comkey="{{$k}}" class="_input data-v-6841f998" />
+              </view>
+              <view class="_view data-v-6841f998">
+                <text class="_text data-v-6841f998">充值次数\n</text>
+                <text class="_text data-v-6841f998">无限制</text>
+              </view>
+            </view>
+            <view class="_view data-v-6841f998 showTitle">
+              <view class="_view data-v-6841f998 mode"> 充值方式 </view>
+              <view class="_view data-v-6841f998 ali" data-type="1" bindtap="handleProxy" data-eventid="{{'1L8-2'}}" data-comkey="{{$k}}">
+                <image wx:if="{{ali&&type==1}}" src="../../../static/selectY.png" mode class="_image data-v-6841f998"></image>
+                <image wx:else src="../../../static/unSelect.png" mode class="_image data-v-6841f998"></image>
+                <text class="_text data-v-6841f998">支付宝支付</text>
+              </view>
+              <view class="_view data-v-6841f998 ali" data-type="2" bindtap="handleProxy" data-eventid="{{'HZn-3'}}" data-comkey="{{$k}}">
+                <image wx:if="{{wx&&type==2}}" src="../../../static/selectY.png" mode class="_image data-v-6841f998"></image>
+                <image wx:else src="../../../static/unSelect.png" mode class="_image data-v-6841f998"></image>
+                <text class="_text data-v-6841f998">微信支付</text>
+              </view>
+            </view>
+          </view>
+          <view class="_view data-v-6841f998 sBottom">
+            <button class="_button data-v-6841f998 btnSall2" type="default">买入</button>
+            <button class="_button data-v-6841f998 cancel1" type="default" bindtap="handleProxy" data-eventid="{{'eHd-4'}}" data-comkey="{{$k}}">取消</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,1 @@
+<import src="/pages/healthySpace/invite.vue.wxml" /><template is="0b9a0fd1" data="{{ ...$root['0'], $root }}"/>

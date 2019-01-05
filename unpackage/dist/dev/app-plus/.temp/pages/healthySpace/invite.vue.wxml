@@ -1,0 +1,11 @@
+<import src="/components/shareModel.vue.wxml" />
+<template name="1477cdde">
+  <view class="_view data-v-b78f96a8 invite">
+    <image class="_image data-v-b78f96a8 inviteBg" src="../../static/inviteBg.png" mode></image>
+    <text class="_text data-v-b78f96a8 code posi">{{shareCode}}</text>
+    <text class="_text data-v-b78f96a8 copy posi" bindtap="handleProxy" data-eventid="{{'mjN-0'}}" data-comkey="{{$k}}">点击复制我的邀请码</text>
+    <text class="_text data-v-b78f96a8 shareText posi" bindtap="handleProxy" data-eventid="{{'30D-1'}}" data-comkey="{{$k}}">立即分享邀请码给好友</text>
+    <template data="{{...$root['0'], ...$root[$kk+'IiV-0'],$root}}" is="2d7791ac"></template>
+    <text class="_text data-v-b78f96a8 prompt" hidden="{{!(promptShow)}}">内容已复制</text>
+  </view>
+</template>

@@ -1,0 +1,58 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="8af809bc">
+  <view class="_view data-v-1814f994 content">
+    <view class="_view data-v-1814f994 tab">
+      <view data-type="0" bindtap="handleProxy" data-eventid="{{'9ST-0'}}" data-comkey="{{$k}}" class="_view data-v-1814f994 {{type == '0' ? 'active' : ''}}">全部</view>
+      <view data-type="1" bindtap="handleProxy" data-eventid="{{'p3w-1'}}" data-comkey="{{$k}}" class="_view data-v-1814f994 {{type == '1' ? 'active' : ''}}">待付款</view>
+      <view data-type="2" bindtap="handleProxy" data-eventid="{{'ZSc-2'}}" data-comkey="{{$k}}" class="_view data-v-1814f994 {{type == '2' ? 'active' : ''}}">待发货</view>
+      <view data-type="3" bindtap="handleProxy" data-eventid="{{'i6N-3'}}" data-comkey="{{$k}}" class="_view data-v-1814f994 {{type == '3' ? 'active' : ''}}">待收货</view>
+      <view data-type="4" bindtap="handleProxy" data-eventid="{{'htH-4'}}" data-comkey="{{$k}}" class="_view data-v-1814f994 {{type == '4' ? 'active' : ''}}">待评价</view>
+    </view>
+    <view class="_view data-v-1814f994 scroll-view" wx:if="{{list.length>0}}">
+      <view class="_view data-v-1814f994 list" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+        <navigator url class="_navigator data-v-1814f994 store">
+          <view class="_view data-v-1814f994 icons">
+            <image src="../../static/store.png" mode class="_image data-v-1814f994"></image>
+            <text class="_text data-v-1814f994">一叶子官方旗舰店</text>
+          </view>
+          <view class="_view data-v-1814f994 state"> {{statusTitle}} </view>
+        </navigator>
+        <navigator class="_navigator data-v-1814f994 goodsInfo">
+          <view class="_view data-v-1814f994 goodsImg">
+            <image src="../../static/photo.png" mode class="_image data-v-1814f994"></image>
+          </view>
+          <view class="_view data-v-1814f994 rightGoods">
+            <view class="_view data-v-1814f994 goodsDetail">
+              <view class="_view data-v-1814f994 referral">
+                <text class="_text data-v-1814f994 refDetail">Swisse奶蓟草护肝片澳洲进口保健品护 肝解毒片保健品护保健品护保健品护保健品护保健品护保健品护保健品护</text>
+              </view>
+              <view class="_view data-v-1814f994 referrals">
+                <text class="_text data-v-1814f994">￥263\n</text>
+                <text class="_text data-v-1814f994">x 1</text>
+              </view>
+            </view>
+            <view class="_view data-v-1814f994 mold"> 类型：180粒/瓶 </view>
+          </view>
+        </navigator>
+        <view class="_view data-v-1814f994 goodsNum">
+          <view class="_view data-v-1814f994 numLeft">
+            <text class="_text data-v-1814f994">共1件商品</text>
+            <text class="_text data-v-1814f994">合计: ￥263</text>
+          </view>
+          <view class="_view data-v-1814f994 numLeft">
+            <button class="_button data-v-1814f994 btn" wx:if="{{type=='0'}}" type="default" bindtap="handleProxy" data-eventid="{{'OGU-5-'+index}}" data-comkey="{{$k}}">查看详情</button>
+            <button class="_button data-v-1814f994 btn" wx:if="{{type=='1'}}" type="default" bindtap="handleProxy" data-eventid="{{'DBA-6-'+index}}" data-comkey="{{$k}}">立即付款</button>
+            <button class="_button data-v-1814f994 btn" wx:if="{{type=='2'}}" type="default" bindtap="handleProxy" data-eventid="{{'XtG-7-'+index}}" data-comkey="{{$k}}">提醒发货</button>
+            <button class="_button data-v-1814f994 btn" wx:if="{{type=='3'}}" type="default" bindtap="handleProxy" data-eventid="{{'gmW-8-'+index}}" data-comkey="{{$k}}">确认收货</button>
+            <button class="_button data-v-1814f994 btn" wx:if="{{type=='4'}}" type="default" bindtap="handleProxy" data-eventid="{{'eV0-9-'+index}}" data-comkey="{{$k}}">去评价</button>
+          </view>
+        </view>
+      </view>
+      <template data="{{...$root['0'], ...$root[$kk+'7e2-0'],$root}}" is="53a2a299"></template>
+    </view>
+    <view wx:else class="_view data-v-1814f994 empty">
+      <image src="../../../static/empty.png" mode class="_image data-v-1814f994"></image>
+      <text class="_text data-v-1814f994">您还没有可用卡券哦</text>
+    </view>
+  </view>
+</template>

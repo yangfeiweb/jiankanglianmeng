@@ -1,0 +1,27 @@
+<template name="de033688">
+  <view class="_view data-v-45425e62 discounts">
+    <view class="_view data-v-45425e62 discountsList">
+      <view class="_view data-v-45425e62 discountsItem" wx:key="index" key="{{index}}" wx:for="{{discountsData}}" wx:for-index="index" wx:for-item="item">
+        <view class="_view data-v-45425e62 discountsBody">
+          <view class="_view data-v-45425e62 discountsItemLeft">
+            <view class="_view data-v-45425e62 discountsItemLeftTop">
+              <text class="_text data-v-45425e62 {{item.receive === 'N' ? 'blue moneyIcon' : 'orangeTime moneyIcon'}}">￥</text>
+              <text class="_text data-v-45425e62 {{item.receive === 'N' ? 'blue sum' : 'orange sum'}}">{{item.sum}}</text>
+            </view>
+            <text class="_text data-v-45425e62 {{item.receive === 'N' ? 'blue fullUseOf' : 'orangeTime fullUseOf'}}">满{{item.fullUseOf}}可用</text>
+          </view>
+          <view class="_view data-v-45425e62 discountsItemRight">
+            <view class="_view data-v-45425e62 discountsItemMsg">
+              <text class="_text data-v-45425e62 msg">{{item.shopName}}</text>
+              <text class="_text data-v-45425e62 endTime">有效期至{{item.endTime}}</text>
+            </view>
+            <text wx:if="{{item.receive==='N'}}" class="_text data-v-45425e62 receiveBtn blueBtn" bindtap="handleProxy" data-eventid="{{'qcM-1-'+index}}" data-comkey="{{$k}}">立即领取</text>
+            <text wx:else class="_text data-v-45425e62 receiveBtn orangeBtn" bindtap="handleProxy" data-eventid="{{'rIq-0-'+index}}" data-comkey="{{$k}}">立即使用</text>
+          </view>
+        </view>
+        <view hidden="{{!(item.receive==='Y')}}" class="_view data-v-45425e62 sign"></view>
+        <text hidden="{{!(item.receive==='Y')}}" class="_text data-v-45425e62 signText">已领</text>
+      </view>
+    </view>
+  </view>
+</template>

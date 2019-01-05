@@ -1,0 +1,24 @@
+<import src="/components/shareModel.vue.wxml" />
+<template name="6765eca4">
+  <view class="_view data-v-53366438 recommend">
+    <image class="_image data-v-53366438 recommendBg" src="../../static/recommendBg.png" mode></image>
+    <view class="_view data-v-53366438 turnout posi">
+      <text class="_text data-v-53366438 turnoutText" wx:key="index" key="{{index}}" wx:for="{{turnoutList}}" wx:for-index="index" wx:for-item="item">{{item}}</text>
+    </view>
+    <view class="_view data-v-53366438 recommendTitle posi">
+      <text class="_text data-v-53366438 recommendText">推荐好友购物 最高得</text>
+      <text class="_text data-v-53366438 recommendTitleRule textStyle">88</text>
+      <text class="_text data-v-53366438 recommendText">元红包</text>
+      <text class="_text data-v-53366438 recommendTitleRule rule" bindtap="handleProxy" data-eventid="{{'LlQ-0'}}" data-comkey="{{$k}}">活动规则</text>
+    </view>
+    <text class="_text data-v-53366438 friend posi" bindtap="handleProxy" data-eventid="{{'Zk0-1'}}" data-comkey="{{$k}}">推荐好友</text>
+    <text class="_text data-v-53366438 shops posi" bindtap="handleProxy" data-eventid="{{'7ul-2'}}" data-comkey="{{$k}}">推荐商家</text>
+    <template data="{{...$root['0'], ...$root[$kk+'WdE-0'],$root}}" is="1a392ac6"></template>
+    <text class="_text data-v-53366438 service posi" bindtap="handleProxy" data-eventid="{{'PHa-3'}}" data-comkey="{{$k}}">联系客服</text>
+    <view class="_view data-v-53366438 mask" hidden="{{!(ruleMaskShow)}}" bindtap="handleProxy" data-eventid="{{'rk9-4'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-53366438 popup popup-middle" hidden="{{!(rulePopupShow)}}">
+      <image class="_image data-v-53366438 ruleBg" src="../../static/ruleBg.png" mode></image>
+      <text class="_text data-v-53366438 closeBtn" bindtap="handleProxy" data-eventid="{{'DRC-5'}}" data-comkey="{{$k}}">关闭</text>
+    </view>
+  </view>
+</template>

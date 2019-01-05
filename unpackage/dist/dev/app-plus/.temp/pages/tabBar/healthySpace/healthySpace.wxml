@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/healthySpace/healthySpace.vue.wxml" /><template is="27372368" data="{{ ...$root['0'], $root }}"/>

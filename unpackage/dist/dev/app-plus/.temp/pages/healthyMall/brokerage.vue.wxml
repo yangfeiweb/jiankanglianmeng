@@ -1,0 +1,12 @@
+<import src="/components/shareModel.vue.wxml" />
+<template name="713da686">
+  <view class="_view data-v-bca26876 brokerage">
+    <image class="_image data-v-bca26876 brokerageBg" src="../../static/brokerage.png" mode></image>
+    <view class="_view data-v-bca26876 brokerageData">
+      <text class="_text data-v-bca26876 money posi">{{brokerageData.money}}元</text>
+      <text class="_text data-v-bca26876 num posi">{{brokerageData.num}}件</text>
+    </view>
+    <text class="_text data-v-bca26876 shareText posi" bindtap="handleProxy" data-eventid="{{'Tns-0'}}" data-comkey="{{$k}}">立即分享赚佣金</text>
+    <template data="{{...$root['0'], ...$root[$kk+'fsW-0'],$root}}" is="2d7791ac"></template>
+  </view>
+</template>

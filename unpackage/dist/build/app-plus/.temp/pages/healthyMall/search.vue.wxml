@@ -1,0 +1,30 @@
+<template name="9eb824a4">
+  <view class="_view data-v-48c67470 index">
+    <view class="_view data-v-48c67470 header">
+      <view class="_view data-v-48c67470 search" bindtap="handleProxy" data-eventid="{{'cn7-0'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-48c67470 uni-icon uni-icon-search"></view>
+        <input class="_input data-v-48c67470 searchInput" type="text" value="" placeholder="点击搜索商品或者店铺" />
+      </view>
+      <image class="_image data-v-48c67470 deteleImg" src="../../static/cancel_icon.png" mode></image>
+      <text class="_text data-v-48c67470 cancelText">取消</text>
+    </view>
+    <view class="_view data-v-48c67470 searchContent">
+      <view class="_view data-v-48c67470 searchContentHeader">
+        <text class="_text data-v-48c67470 find">搜索发现</text>
+        <text class="_text data-v-48c67470 recordDelete">消除搜索记录</text>
+      </view>
+      <view class="_view data-v-48c67470 searchFindText">
+        <view class="_view data-v-48c67470 searchFindTextItem" wx:key="index" key="{{index}}" wx:for="{{searchFindTextData}}" wx:for-index="index" wx:for-item="item"> {{item.name}} </view>
+      </view>
+      <view class="_view data-v-48c67470 searchList">
+        <view class="_view data-v-48c67470 searchListItem" wx:key="index" key="{{index}}" wx:for="{{searchListData}}" wx:for-index="index" wx:for-item="item">
+          <view class="_view data-v-48c67470">
+            <image class="_image data-v-48c67470 searchListItemIcon1" src="../../static/s-search.png" mode></image>
+            <text class="_text data-v-48c67470 searchName">{{item.name}}</text>
+          </view>
+          <image class="_image data-v-48c67470 searchListItemIcon2" src="../../static/suo_icon.png" mode></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

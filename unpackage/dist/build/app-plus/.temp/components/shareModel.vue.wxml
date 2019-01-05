@@ -1,0 +1,14 @@
+<template name="1a392ac6">
+  <view class="_view data-v-6feafd3c shareModel">
+    <view class="_view data-v-6feafd3c shareMask" hidden="{{!(maskShow)}}" bindtap="handleProxy" data-eventid="{{'dV4-0'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-6feafd3c sharePopup" hidden="{{!(popupShow)}}">
+      <view class="_view data-v-6feafd3c shareList">
+        <view bindtap="handleProxy" class="_view data-v-6feafd3c shareItem" wx:key="index" key="{{index}}" data-eventid="{{'xjn-1-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item">
+          <image src="{{item.imgUrl}}" mode class="_image data-v-6feafd3c"></image>
+          <text class="_text data-v-6feafd3c shareName">{{item.name}}</text>
+        </view>
+      </view>
+      <text class="_text data-v-6feafd3c cancel" bindtap="handleProxy" data-eventid="{{'jw4-2'}}" data-comkey="{{$k}}">取消</text>
+    </view>
+  </view>
+</template>

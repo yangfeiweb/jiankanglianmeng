@@ -1,0 +1,37 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="6c95900a">
+  <view class="_view data-v-8b7eff9e content">
+    <view class="_view data-v-8b7eff9e tab">
+      <view data-type="0" bindtap="handleProxy" data-eventid="{{'pfP-0'}}" data-comkey="{{$k}}" class="_view data-v-8b7eff9e {{type == '0' ? 'active' : ''}}">未使用</view>
+      <view data-type="1" bindtap="handleProxy" data-eventid="{{'K3j-1'}}" data-comkey="{{$k}}" class="_view data-v-8b7eff9e {{type == '1' ? 'active' : ''}}">已使用</view>
+      <view data-type="2" bindtap="handleProxy" data-eventid="{{'NCY-2'}}" data-comkey="{{$k}}" class="_view data-v-8b7eff9e {{type == '2' ? 'active' : ''}}">已过期</view>
+    </view>
+    <view wx:if="{{list.length>0}}" class="_view data-v-8b7eff9e list">
+      <view class="_view data-v-8b7eff9e coupon" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+        <view class="_view data-v-8b7eff9e {{type == '0' && coupon == '1'  ? 'top1 top'  : type == '0' && coupon == '2'    ? 'top2 top'    : 'top3 top'}}">
+          <view class="_view data-v-8b7eff9e left">
+            <text wx:if="{{coupon=='1'}}" class="_text data-v-8b7eff9e">66.</text>
+            <text wx:if="{{coupon=='1'}}" class="_text data-v-8b7eff9e">00元\n</text>
+            <text wx:else class="_text data-v-8b7eff9e">折扣券</text>
+            <text class="_text data-v-8b7eff9e">单适用于健康商城购物优惠\n单笔商城账单满500元可用</text>
+          </view>
+          <view class="_view data-v-8b7eff9e right">
+            <image wx:if="{{type=='1'}}" src="../../../static/haveUse.png" mode class="_image data-v-8b7eff9e"></image>
+            <image wx:if="{{type=='2'}}" src="../../../static/stale.png" mode class="_image data-v-8b7eff9e"></image>
+            <image wx:if="{{type=='0'}}" src="../../../static/unused.png" mode class="_image data-v-8b7eff9e"></image>
+            <text class="_text data-v-8b7eff9e">2019-02-20至\n2019-02-23</text>
+          </view>
+        </view>
+        <view class="_view data-v-8b7eff9e bottom">
+          <text class="_text data-v-8b7eff9e">红包优惠券</text>
+          <text class="_text data-v-8b7eff9e">新人红包</text>
+        </view>
+      </view>
+      <template data="{{...$root['0'], ...$root[$kk+'egD-0'],$root}}" is="53a2a299"></template>
+    </view>
+    <view wx:else class="_view data-v-8b7eff9e empty">
+      <image src="../../../static/empty.png" mode class="_image data-v-8b7eff9e"></image>
+      <text class="_text data-v-8b7eff9e">您还没有可用卡券哦</text>
+    </view>
+  </view>
+</template>

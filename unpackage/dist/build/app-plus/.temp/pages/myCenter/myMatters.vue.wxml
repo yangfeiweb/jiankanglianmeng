@@ -1,0 +1,73 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="3562a6b4">
+  <view class="_view data-v-ef03008c content">
+    <view class="_view data-v-ef03008c scsj">
+      <view class="_view data-v-ef03008c title">
+        <view class="_view data-v-ef03008c">
+          <text class="_text data-v-ef03008c">充值中心\n</text>
+          <text class="_text data-v-ef03008c">查看我的充值记录</text>
+        </view>
+        <view class="_view data-v-ef03008c">
+          <image src="../../../static/moneyBg.jpg" mode class="_image data-v-ef03008c"></image>
+        </view>
+      </view>
+      <view class="_view data-v-ef03008c choiceFour">
+        <text data-type="0" bindtap="handleProxy" data-eventid="{{'bLy-0'}}" data-comkey="{{$k}}" class="_text data-v-ef03008c {{type == 0 ? 'active' : ''}}">全部</text>
+        <text data-type="1" bindtap="handleProxy" data-eventid="{{'BhV-1'}}" data-comkey="{{$k}}" class="_text data-v-ef03008c {{type == 1 ? 'active' : ''}}">充值</text>
+        <text data-type="2" bindtap="handleProxy" data-eventid="{{'ejD-2'}}" data-comkey="{{$k}}" class="_text data-v-ef03008c {{type == 2 ? 'active' : ''}}">提现</text>
+        <text data-type="3" bindtap="handleProxy" data-eventid="{{'yim-3'}}" data-comkey="{{$k}}" class="_text data-v-ef03008c {{type == 3 ? 'active' : ''}}">失效</text>
+      </view>
+    </view>
+    <view class="_view data-v-ef03008c list">
+      <view class="_view data-v-ef03008c scroll-view">
+        <view class="_view data-v-ef03008c health" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+          <view class="_view data-v-ef03008c top">
+            <view class="_view data-v-ef03008c">
+              <text class="_text data-v-ef03008c">健康金最新优质理财</text>
+            </view>
+            <view class="_view data-v-ef03008c">
+              <text wx:if="{{type==1}}" class="_text data-v-ef03008c">充值成功</text>
+              <text wx:if="{{type==2}}" class="_text data-v-ef03008c">提现成功</text>
+              <text wx:if="{{type==3}}" class="_text data-v-ef03008c cancel">失效订单</text>
+            </view>
+          </view>
+          <view class="_view data-v-ef03008c middle">
+            <view class="_view data-v-ef03008c">
+              <text class="_text data-v-ef03008c">3000元\n</text>
+              <text class="_text data-v-ef03008c">商品成本价额度</text>
+            </view>
+            <view class="_view data-v-ef03008c">
+              <text class="_text data-v-ef03008c">微信\n</text>
+              <text class="_text data-v-ef03008c">充值方式</text>
+            </view>
+            <view class="_view data-v-ef03008c">
+              <text class="_text data-v-ef03008c">2018.9.15\n</text>
+              <text class="_text data-v-ef03008c">时间</text>
+            </view>
+          </view>
+          <view class="_view data-v-ef03008c bottom">
+            <progress percent="50" color="#6984FF" active width="611upx" height="7upx" border-radius="4upx" class="_progress data-v-ef03008c" />
+          </view>
+          <view class="_view data-v-ef03008c foot">
+            <text class="_text data-v-ef03008c">剩余金额1500元\n</text>
+            <text class="_text data-v-ef03008c">50%</text>
+          </view>
+        </view>
+        <template data="{{...$root['0'], ...$root[$kk+'X37-0'],$root}}" is="53a2a299"></template>
+      </view>
+    </view>
+    <view class="_view data-v-ef03008c toast" wx:if="{{toast}}">
+      <view class="_view data-v-ef03008c main">
+        <view class="_view data-v-ef03008c top1">
+          <image src="../../../static/delOrder.png" mode class="_image data-v-ef03008c"></image>
+          <text wx:if="{{type==1}}" class="_text data-v-ef03008c">(取消定期订单会失去所有利息！)</text>
+          <text wx:if="{{type==2}}" class="_text data-v-ef03008c">(取消活期订单只收益部分利息！)</text>
+        </view>
+        <view class="_view data-v-ef03008c bottom1">
+          <text bindtap="handleProxy" data-eventid="{{'vBk-4'}}" data-comkey="{{$k}}" class="_text data-v-ef03008c">确定</text>
+          <text bindtap="handleProxy" data-eventid="{{'dMn-5'}}" data-comkey="{{$k}}" class="_text data-v-ef03008c">取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

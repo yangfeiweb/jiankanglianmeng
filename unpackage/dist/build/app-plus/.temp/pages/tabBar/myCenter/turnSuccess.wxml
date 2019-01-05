@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/myCenter/turnSuccess.vue.wxml" /><template is="a4072a44" data="{{ ...$root['0'], $root }}"/>

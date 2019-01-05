@@ -1,0 +1,35 @@
+<template name="6178bd04">
+  <view class="_view data-v-f8f0c9b8 index">
+    <view class="_view data-v-f8f0c9b8 goodslist">
+      <view class="_view data-v-f8f0c9b8 goodsListItems">
+        <view class="_view data-v-f8f0c9b8 recommendList">
+          <view class="_view data-v-f8f0c9b8 recommendListItem" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'Td1-0-'+index}}" data-comkey="{{$k}}" wx:for="{{timeLimitData}}" wx:for-index="index" wx:for-item="item">
+            <image class="_image data-v-f8f0c9b8 recommendImg" src="{{item.imgUrl}}" mode></image>
+            <view class="_view data-v-f8f0c9b8 recommendListRight">
+              <view class="_view data-v-f8f0c9b8 recommendListRightHeader">
+                <text class="_text data-v-f8f0c9b8 discounts">{{item.discounts}}</text>
+                <text class="_text data-v-f8f0c9b8 goodsName">{{item.goodsName}}</text>
+              </view>
+              <view class="_view data-v-f8f0c9b8 goodsIntro">
+                <text class="_text data-v-f8f0c9b8 discountsIntro">佣金:{{item.discountsIntro}}</text>
+                <text class="_text data-v-f8f0c9b8 sales"> {{item.startTime}} </text>
+              </view>
+              <view class="_view data-v-f8f0c9b8 progressView">
+                <image class="_image data-v-f8f0c9b8 planIcon" src="../../static/planIcon.png" mode></image>
+                <view class="_view data-v-f8f0c9b8 planView">
+                  <progress active backgroundColor="transparent" stroke-width="12" activeColor="#F84722" percent="{{item.percent}}" class="_progress data-v-f8f0c9b8" />
+                </view>
+              </view>
+              <view class="_view data-v-f8f0c9b8 goodsPrice">
+                <text class="_text data-v-f8f0c9b8 goodsPriceTitle">优惠:</text>
+                <text class="_text data-v-f8f0c9b8 goodsPriceText">￥{{item.price}}</text>
+                <text class="_text data-v-f8f0c9b8 goodsOriginalPrice">￥{{item.originalPrice}}</text>
+                <button class="_button data-v-f8f0c9b8 lookBtn">立即分享</button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

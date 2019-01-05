@@ -1,0 +1,9 @@
+<template name="a4072a44">
+  <view class="_view data-v-15859552 content">
+    <view class="_view data-v-15859552 success">
+      <text class="_text data-v-15859552">恭喜转出成功</text>
+      <image src="../../../static/turnSuccess.png" mode class="_image data-v-15859552"></image>
+      <button type="default" bindtap="handleProxy" data-eventid="{{'ztY-0'}}" data-comkey="{{$k}}" class="_button data-v-15859552">确认</button>
+    </view>
+  </view>
+</template>

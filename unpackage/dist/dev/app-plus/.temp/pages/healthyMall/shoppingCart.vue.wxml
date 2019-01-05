@@ -1,0 +1,120 @@
+<template name="5d51ac41">
+  <view class="_view data-v-e7a15f8e index cartNull" wx:if="{{cartNull}}">
+    <image src="../../static/cartNull.png" mode class="_image data-v-e7a15f8e"></image>
+    <text class="_text data-v-e7a15f8e">您还没有商品加入购物车哦!</text>
+  </view>
+  <view wx:else class="_view data-v-e7a15f8e index">
+    <view class="_view data-v-e7a15f8e goodsList">
+      <view class="_view data-v-e7a15f8e goodsListItem" wx:key="index" key="{{index}}" wx:for="{{goodsInfoData}}" wx:for-index="index" wx:for-item="item">
+        <view class="_view data-v-e7a15f8e goodsListItemHeader">
+          <view class="_view data-v-e7a15f8e goodsListItemHeaderLeft">
+            <label class="_label data-v-e7a15f8e radio">
+              <radio color="#87BBF8" value="{{item.shopId}}" checked="{{item.checked===0}}" bindtap="handleProxy" data-eventid="{{'wE9-0-'+index}}" data-comkey="{{$k}}" class="_radio data-v-e7a15f8e" />
+            </label>
+            <image src="{{item.shopImg}}" mode class="_image data-v-e7a15f8e"></image>
+            <text class="_text data-v-e7a15f8e">{{item.shopName}}</text>
+          </view>
+          <text class="_text data-v-e7a15f8e coupons" bindtap="handleProxy" data-eventid="{{'1pI-1-'+index}}" data-comkey="{{$k}}">领劵</text>
+        </view>
+        <view class="_view data-v-e7a15f8e goodsInfo" wx:key="indexs" key="{{indexs}}" wx:for="{{item.list}}" wx:for-index="indexs" wx:for-item="items">
+          <label class="_label data-v-e7a15f8e radio">
+            <radio color="#87BBF8" value="{{items.goodsId}}" checked="{{items.checked===0}}" bindtap="handleProxy" data-eventid="{{'nCw-2-'+index+'-'+indexs}}" data-comkey="{{$k}}" class="_radio data-v-e7a15f8e" />
+          </label>
+          <image src="{{items.imgUrl}}" mode class="_image data-v-e7a15f8e"></image>
+          <view class="_view data-v-e7a15f8e goodsInfoRight">
+            <text class="_text data-v-e7a15f8e goodsName">{{items.name}}</text>
+            <text class="_text data-v-e7a15f8e goodsType">类型: {{items.type}}</text>
+            <view class="_view data-v-e7a15f8e goodsInfoBottom">
+              <text class="_text data-v-e7a15f8e goodsInfoBottomPrice">￥{{items.price}}</text>
+            </view>
+          </view>
+          <view class="_view data-v-e7a15f8e goodsNum">
+            <image class="_image data-v-e7a15f8e goodsNumAdd" src="../../static/cartTop.png" mode bindtap="handleProxy" data-eventid="{{'WAE-3-'+index+'-'+indexs}}" data-comkey="{{$k}}"></image>
+            <text class="_text data-v-e7a15f8e goodsNumText">{{items.num}}</text>
+            <image class="_image data-v-e7a15f8e goodsNumReduce" src="../../static/cartDown.png" bindtap="handleProxy" mode data-eventid="{{'pyJ-4-'+index+'-'+indexs}}" data-comkey="{{$k}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-e7a15f8e loseEfficacyGoods">
+      <view class="_view data-v-e7a15f8e loseEfficacyTitle">
+        <text class="_text data-v-e7a15f8e title">失效宝贝{{loseEfficacyData.loseEfficacyGoodsNum}}件</text>
+        <text class="_text data-v-e7a15f8e deteleBtn" bindtap="handleProxy" data-eventid="{{'bVt-5'}}" data-comkey="{{$k}}">删除失效商品！</text>
+      </view>
+      <view class="_view data-v-e7a15f8e goodsInfo" wx:key="indexs" key="{{indexs}}" wx:for="{{loseEfficacyData.list}}" wx:for-index="indexs" wx:for-item="items">
+        <image src="{{items.imgUrl}}" mode class="_image data-v-e7a15f8e"></image>
+        <view class="_view data-v-e7a15f8e goodsInfoRight">
+          <text class="_text data-v-e7a15f8e goodsName">{{items.name}}</text>
+          <text class="_text data-v-e7a15f8e loseEfficacyInfo">商品已不能购买，请重新添加 </text>
+          <view class="_view data-v-e7a15f8e goodsInfoBottom">
+            <text class="_text data-v-e7a15f8e loseEfficacyTime">失效日期: {{items.loseEfficacyTime}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-e7a15f8e operation">
+      <view wx:if="{{payShow}}" class="_view data-v-e7a15f8e operationPay">
+        <view class="_view data-v-e7a15f8e operationPayLeft">
+          <label class="_label data-v-e7a15f8e radio">
+            <radio color="#87BBF8" value="checkedAll" checked="{{checkedAll}}" bindtap="handleProxy" data-eventid="{{'AuH-6'}}" data-comkey="{{$k}}" class="_radio data-v-e7a15f8e" />全选 </label>
+          <view class="_view data-v-e7a15f8e goodsDetails">
+            <text class="_text data-v-e7a15f8e goodsDetailsTop">一共{{checkedGoodsNum}}件商品</text>
+            <view class="_view data-v-e7a15f8e goodsDetailsBottom">
+              <text class="_text data-v-e7a15f8e moneyTitle">总金额</text>
+              <text class="_text data-v-e7a15f8e moneySmall">￥</text>
+              <text class="_text data-v-e7a15f8e moneyBig">{{moneyUnit}}.</text>
+              <text class="_text data-v-e7a15f8e moneySmall">{{moneyAngle}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-e7a15f8e">
+          <text class="_text data-v-e7a15f8e editBtn" bindtap="handleProxy" data-eventid="{{'T0S-7'}}" data-comkey="{{$k}}">编辑</text>
+          <text class="_text data-v-e7a15f8e payBtn" bindtap="handleProxy" data-eventid="{{'lTX-8'}}" data-comkey="{{$k}}">马上支付</text>
+        </view>
+      </view>
+      <view wx:else class="_view data-v-e7a15f8e operationDetele">
+        <view class="_view data-v-e7a15f8e operationPayLeft">
+          <label class="_label data-v-e7a15f8e radio">
+            <radio color="#87BBF8" value="checkedAll" checked="{{checkedAll}}" bindtap="handleProxy" data-eventid="{{'uDg-9'}}" data-comkey="{{$k}}" class="_radio data-v-e7a15f8e" />全选 </label>
+        </view>
+        <view class="_view data-v-e7a15f8e operationDeteleRight">
+          <view class="_view data-v-e7a15f8e goodsDetails">
+            <text class="_text data-v-e7a15f8e goodsDetailsTop">一共{{checkedGoodsNum}}件商品</text>
+            <view class="_view data-v-e7a15f8e goodsDetailsBottom">
+              <text class="_text data-v-e7a15f8e moneyTitle">总金额</text>
+              <text class="_text data-v-e7a15f8e moneySmall">￥</text>
+              <text class="_text data-v-e7a15f8e moneyBig">{{moneyUnit}}</text>
+              <text class="_text data-v-e7a15f8e moneySmall">.{{moneyAngle}}</text>
+            </view>
+          </view>
+          <text class="_text data-v-e7a15f8e payBtn" bindtap="handleProxy" data-eventid="{{'wCe-10'}}" data-comkey="{{$k}}">立即删除</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-e7a15f8e mask" hidden="{{!(showMaskCart)}}" bindtap="handleProxy" data-eventid="{{'YYz-11'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-e7a15f8e popup popup-middle" hidden="{{!(showStateCart)}}">
+      <view class="_view data-v-e7a15f8e popupView">
+        <image src="../../static/deleteImg.png" mode class="_image data-v-e7a15f8e"></image>
+        <image src="../../static/detelepop.png" bindtap="handleProxy" mode data-eventid="{{'9Ja-12'}}" data-comkey="{{$k}}" class="_image data-v-e7a15f8e"></image>
+      </view>
+    </view>
+    <view class="_view data-v-e7a15f8e mask" hidden="{{!(showMaskCoupons)}}" bindtap="handleProxy" data-eventid="{{'amS-13'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-e7a15f8e popup popup-bottom" hidden="{{!(showCoupons)}}">
+      <text class="_text data-v-e7a15f8e popupShopName">{{currentShopName}}</text>
+      <view class="_view data-v-e7a15f8e shopCouponsList">
+        <view class="_view data-v-e7a15f8e shopCouponsListItem" wx:key="index" key="{{index}}" wx:for="{{shopCouponsData}}" wx:for-index="index" wx:for-item="item">
+          <view class="_view data-v-e7a15f8e shopCouponsListItemLeft">
+            <view class="_view data-v-e7a15f8e money">
+              <text class="_text data-v-e7a15f8e couponsMoney">{{item.money}}</text>
+              <text class="_text data-v-e7a15f8e couponsMoneyIcon">元</text>
+            </view>
+            <text class="_text data-v-e7a15f8e meetMoney">订单满{{item.meetMoney}}元使用</text>
+            <text class="_text data-v-e7a15f8e couponsTime">使用期限{{item.startTime}}-{{item.endTime}}</text>
+          </view>
+          <text bindtap="handleProxy" data-eventid="{{'EIS-14-'+index}}" data-comkey="{{$k}}" class="_text data-v-e7a15f8e {{item.get === false  ? 'active shopCouponsListItemRight'  : 'shopCouponsListItemRight'}}">{{item.get===false?'领取':'已领取'}}</text>
+        </view>
+      </view>
+      <text class="_text data-v-e7a15f8e hideBtn" hidden="{{!(showMaskCoupons)}}" bindtap="handleProxy" data-eventid="{{'Ou6-15'}}" data-comkey="{{$k}}">关闭</text>
+    </view>
+  </view>
+</template>

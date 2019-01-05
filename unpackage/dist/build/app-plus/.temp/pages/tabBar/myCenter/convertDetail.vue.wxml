@@ -1,0 +1,43 @@
+<template name="33799afc">
+  <view class="_view data-v-a49ca996 content">
+    <view class="_view data-v-a49ca996 topImg">
+      <image src="../../../static/photo.png" mode class="_image data-v-a49ca996"></image>
+    </view>
+    <view class="_view data-v-a49ca996 detail">
+      <view class="_view data-v-a49ca996 goods">
+        <view class="_view data-v-a49ca996 left"> 精品双肩包 </view>
+        <view class="_view data-v-a49ca996 right">
+          <text class="_text data-v-a49ca996">x1份</text>
+          <image src="../../../static/rightArrow.png" mode class="_image data-v-a49ca996"></image>
+        </view>
+      </view>
+      <view class="_view data-v-a49ca996 goods">
+        <view class="_view data-v-a49ca996 goodsNum"> 兑换价格 </view>
+        <view class="_view data-v-a49ca996 goodsNum">
+          <text class="_text data-v-a49ca996">2300</text>
+          <text class="_text data-v-a49ca996">生命果</text>
+        </view>
+      </view>
+      <view class="_view data-v-a49ca996 goods">
+        <view class="_view data-v-a49ca996 goodsNum"> 兑换时间 </view>
+        <view class="_view data-v-a49ca996 goodsNum1">
+          <text class="_text data-v-a49ca996">2018-11-2 09:08</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-a49ca996 detail">
+      <view class="_view data-v-a49ca996 goods">
+        <view class="_view data-v-a49ca996 goodsNum"> 快递公司 </view>
+        <view class="_view data-v-a49ca996 goodsNum1">
+          <text class="_text data-v-a49ca996">圆通速递</text>
+        </view>
+      </view>
+      <view class="_view data-v-a49ca996 goods">
+        <view class="_view data-v-a49ca996 goodsNum"> 快递单号 </view>
+        <view class="_view data-v-a49ca996 goodsNum">
+          <text class="_text data-v-a49ca996">JADFADJA-DADA</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

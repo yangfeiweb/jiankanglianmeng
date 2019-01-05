@@ -1,0 +1,1 @@
+<import src="/pages/healthyMall/addShippingAddress.vue.wxml" /><template is="a5acf844" data="{{ ...$root['0'], $root }}"/>

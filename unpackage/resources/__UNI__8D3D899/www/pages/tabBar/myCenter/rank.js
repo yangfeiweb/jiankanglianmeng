@@ -1,0 +1,13 @@
+
+      !(function(){
+        var uniAppViewReadyCallback = function(){
+          setCssToHead([[2,1],".",[1],"place-holder{font-size:",[0,34],";color:#c2c0c0}\nbody{width:100%;height:100%;box-sizing:border-box;background-color:#fff}\nbody::-webkit-scrollbar{width:0;height:0;color:transparent}\n.",[1],"content{width:100%;background-color:#fff;padding-top:",[0,6],"}\n.",[1],"code{width:",[0,171],";height:",[0,58],";border:",[0,1]," solid #e7e7e7}\n.",[1],"top{color:#333;font-size:",[0,66],";width:100%;box-sizing:border-box;padding-left:",[0,81],";margin-top:",[0,115],";margin-bottom:",[0,90],"}\n.",[1],"top wx-text{color:#747373;font-size:",[0,28],";margin-top:",[0,38],"}\n.",[1],"chart{width:100%;box-sizing:border-box;padding:0 ",[0,85]," 0 ",[0,76],"}\n.",[1],"chart .",[1],"getPhone{border-bottom:",[0,1]," solid #dcdbdb;height:",[0,102],";line-height:",[0,102],";display:-webkit-box;display:-webkit-flex;display:flex}\n.",[1],"chart .",[1],"phone{border-bottom:0}\n.",[1],"chart .",[1],"getPhone wx-text{color:#333;width:",[0,410],";font-size:",[0,32],"}\n.",[1],"chart .",[1],"getPhone .",[1],"getcode{color:#519ef7;font-size:",[0,24],";border:",[0,1]," solid #519ef7;height:",[0,50],";padding:0 ",[0,22],";box-sizing:border-box;border-radius:",[0,25],";margin-top:",[0,26],";line-height:",[0,44],";text-align:center}\n.",[1],"chart .",[1],"getPhone .",[1],"getcode1{color:#666;width:",[0,175],";font-size:",[0,24],";text-align:center}\n.",[1],"chart .",[1],"getPhone .",[1],"_input{width:",[0,410],";height:100%}\n.",[1],"chart .",[1],"getPhone .",[1],"yzm{border:",[0,1]," solid #fff;height:",[0,60],";width:",[0,170],";margin-top:",[0,21],";background-color:#fff;color:#c2c0c0;line-height:",[0,56],"}\n.",[1],"chart .",[1],"getPhone .",[1],"pwdEye{-webkit-box-flex:.9;-webkit-flex:.9;flex:.9;text-align:right}\n.",[1],"chart .",[1],"getPhone .",[1],"pwdEye wx-image{vertical-align:middle;width:",[0,41],";height:",[0,26],"}\n.",[1],"submits{margin-top:",[0,85],";width:100%}\n.",[1],"submits .",[1],"_button{width:",[0,690],";height:",[0,82],";background:#519ef7;border-radius:",[0,5],";font-size:",[0,36],";color:#fff;line-height:",[0,82],";margin:0 auto}\n",],undefined,{path:"./pages/tabBar/myCenter/rank.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/tabBar/myCenter/rank.wxml') } }));
+        }
+        if(window.__uniAppViewReady__){
+          uniAppViewReadyCallback()
+        }else{
+          document.addEventListener('uniAppViewReady',uniAppViewReadyCallback)
+        }
+      })();
+      

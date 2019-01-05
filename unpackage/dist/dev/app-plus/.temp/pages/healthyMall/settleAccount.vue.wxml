@@ -1,0 +1,88 @@
+<template name="2c5f71ce">
+  <view class="_view data-v-d2b1bbbe index">
+    <view class="_view data-v-d2b1bbbe addSite">
+      <view class="_view data-v-d2b1bbbe addSiteLeft" wx:if="{{siteShow}}" bindtap="handleProxy" data-eventid="{{'sOm-0'}}" data-comkey="{{$k}}">
+        <image class="_image data-v-d2b1bbbe siteIcon" src="../../static/siteIcon.png" mode></image>
+        <text class="_text data-v-d2b1bbbe addSiteText">请添加收货地址</text>
+      </view>
+      <view class="_view data-v-d2b1bbbe addSiteLeft siteLeft" wx:else>
+        <view class="_view data-v-d2b1bbbe siteInfoTop">
+          <text class="_text data-v-d2b1bbbe siteName">{{siteData.name}}</text>
+          <text class="_text data-v-d2b1bbbe siteTel">{{siteData.tel}}</text>
+          <button class="_button data-v-d2b1bbbe siteDefalutBtn">默认</button>
+        </view>
+        <text class="_text data-v-d2b1bbbe siteDefinite"> {{siteData.prov+siteData.citiy+siteData.count+siteData.definite}} </text>
+      </view>
+      <image bindtap="handleProxy" class="_image data-v-d2b1bbbe moveIcon" src="../../static/move.png" mode data-eventid="{{'3UR-1'}}" data-comkey="{{$k}}"></image>
+    </view>
+    <view class="_view data-v-d2b1bbbe orderInfo">
+      <view class="_view data-v-d2b1bbbe orderInfoList" wx:key="index" key="{{index}}" wx:for="{{orderInfoData}}" wx:for-index="index" wx:for-item="item">
+        <view class="_view data-v-d2b1bbbe orderHeader">
+          <image src="{{item.shopImg}}" mode class="_image data-v-d2b1bbbe"></image>
+          <text class="_text data-v-d2b1bbbe">{{item.shopName}}</text>
+        </view>
+        <view class="_view data-v-d2b1bbbe orderInfoItem" wx:key="indexs" key="{{indexs}}" wx:for="{{item.list}}" wx:for-index="indexs" wx:for-item="items">
+          <image src="{{items.imgUrl}}" mode class="_image data-v-d2b1bbbe"></image>
+          <view class="_view data-v-d2b1bbbe orderInfoItemRight">
+            <text class="_text data-v-d2b1bbbe orderGoodsName">{{items.name}}</text>
+            <text class="_text data-v-d2b1bbbe orderType">类型: {{items.type}}</text>
+            <view class="_view data-v-d2b1bbbe orderInfoBottom">
+              <text class="_text data-v-d2b1bbbe orderInfoBottomPrice">￥{{items.price}}</text>
+              <text class="_text data-v-d2b1bbbe orderInfoBottomNum">x {{items.num}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-d2b1bbbe discountCoupon">
+      <view class="_view data-v-d2b1bbbe orderHeader">
+        <image src="../../static/discounts.png" mode class="_image data-v-d2b1bbbe"></image>
+        <text class="_text data-v-d2b1bbbe">选择优惠券：本优惠券为您节省</text>
+      </view>
+      <view class="_view data-v-d2b1bbbe discountCouponText" bindtap="handleProxy" data-eventid="{{'SJL-2'}}" data-comkey="{{$k}}">
+        <text wx:if="{{discountsShow}}" class="_text data-v-d2b1bbbe discountsMoney">-￥{{discountsMoney}}</text>
+        <text wx:else class="_text data-v-d2b1bbbe discountsMoney">{{discountsMoney}}</text>
+        <image src="../../static/move.png" mode class="_image data-v-d2b1bbbe"></image>
+      </view>
+    </view>
+    <view class="_view data-v-d2b1bbbe leaveWord">
+      <view class="_view data-v-d2b1bbbe orderHeader">
+        <image src="../../static/leaveWord.png" mode class="_image data-v-d2b1bbbe"></image>
+        <text class="_text data-v-d2b1bbbe">卖家留言: </text>
+        <input type="text" value="" bindinput="handleProxy" bindconfirm="handleProxy" placeholder="对本次交易的说明" data-eventid="{{'mQF-3'}}" data-comkey="{{$k}}" class="_input data-v-d2b1bbbe" />
+      </view>
+    </view>
+    <view class="_view data-v-d2b1bbbe totalPrice">
+      <view class="_view data-v-d2b1bbbe orderHeader">
+        <image src="../../static/settle.png" mode class="_image data-v-d2b1bbbe"></image>
+        <text class="_text data-v-d2b1bbbe">共有{{goodsTotal.goodsNum}}件商品 </text>
+      </view>
+      <view class="_view data-v-d2b1bbbe totalContent">
+        <view class="_view data-v-d2b1bbbe totalContentItem">
+          <text class="_text data-v-d2b1bbbe totalName">商品总额:</text>
+          <text class="_text data-v-d2b1bbbe totalText">￥{{goodsTotal.totalAmount}}</text>
+        </view>
+        <view class="_view data-v-d2b1bbbe totalContentItem">
+          <text class="_text data-v-d2b1bbbe totalName">运费:</text>
+          <text class="_text data-v-d2b1bbbe totalText">￥{{goodsTotal.carriage}}</text>
+        </view>
+        <view class="_view data-v-d2b1bbbe totalContentItem">
+          <text class="_text data-v-d2b1bbbe totalName">优惠券:</text>
+          <text class="_text data-v-d2b1bbbe totalText">-￥{{discountsMoney}}</text>
+        </view>
+        <view class="_view data-v-d2b1bbbe totalContentItem">
+          <text class="_text data-v-d2b1bbbe totalName">总计:</text>
+          <text class="_text data-v-d2b1bbbe totalText colorBlue">￥{{goodsTotal.total}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-d2b1bbbe settle">
+      <view class="_view data-v-d2b1bbbe sum">
+        <text class="_text data-v-d2b1bbbe sumName">总金额：</text>
+        <text class="_text data-v-d2b1bbbe sumIcon">￥</text>
+        <text class="_text data-v-d2b1bbbe sumText">{{goodsTotal.total}}</text>
+      </view>
+      <button disabled="{{settleBtnDisabled}}" class="_button data-v-d2b1bbbe">马上结算</button>
+    </view>
+  </view>
+</template>

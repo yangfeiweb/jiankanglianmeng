@@ -1,0 +1,171 @@
+<template name="4e9fb596">
+  <view class="_view data-v-09d62415 healthyMall">
+    <view class="_view data-v-09d62415 header">
+      <view class="_view data-v-09d62415 search">
+        <view class="_view data-v-09d62415 uni-icon uni-icon-search"></view>
+        <text class="_text data-v-09d62415 searchInput" bindtap="handleProxy" data-eventid="{{'3M0-0'}}" data-comkey="{{$k}}">点击搜索商品或者店铺</text>
+      </view>
+      <image class="_image data-v-09d62415 cart" src="../../../static/cart.png" mode bindtap="handleProxy" data-eventid="{{'NNi-1'}}" data-comkey="{{$k}}"></image>
+    </view>
+    <view class="_view data-v-09d62415 swiperContent">
+      <scroll-view id="tab-bar" class="_scroll-view data-v-09d62415 swiper-tab" scroll-x scroll-left="{{scrollLeft}}">
+        <block wx:key="tab.id" key="{{tab.id}}" wx:for="{{tabsList}}" wx:for-index="index" wx:for-item="tab">
+          <view id="{{tab.id}}" data-current="{{index}}" bindtap="handleProxy" data-eventid="{{'86P-2-'+index}}" data-comkey="{{$k}}" class="_view data-v-09d62415 {{['swiper-tab-list', currentTab == index ? 'on' : '']}}">{{tab.name}}</view>
+        </block>
+      </scroll-view>
+      <view class="_view data-v-09d62415 swiperContentDetails">
+        <block wx:if="{{goodsListShow}}">
+          <view class="_view data-v-09d62415 swiper">
+            <swiper previous-margin="30rpx" next-margin="30rpx" current="{{1}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="handleProxy" data-eventid="{{'BsC-3'}}" data-comkey="{{$k}}"
+              class="_swiper data-v-09d62415">
+              <swiper-item wx:key="index" key="{{index}}" wx:for="{{imgUrlList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-09d62415 {{currents === index ? 'current swiperView' : 'noCurrent swiperView'}}">
+                <view class="_view data-v-09d62415 swiper-item">
+                  <image src="{{item.imgUrl}}" mode class="_image data-v-09d62415"></image>
+                </view>
+              </swiper-item>
+            </swiper>
+          </view>
+          <view class="_view data-v-09d62415 actionBlock">
+            <view class="_view data-v-09d62415 actionBlockItem" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'HNE-4-'+index}}" data-comkey="{{$k}}" wx:for="{{actionList}}" wx:for-index="index" wx:for-item="item">
+              <image class="_image data-v-09d62415 actionBlockImg" src="{{item.imgUrl}}" mode></image>
+              <text class="_text data-v-09d62415 actionBlockText">{{item.name}}</text>
+            </view>
+          </view>
+          <view class="_view data-v-09d62415 borderBlock"></view>
+          <view class="_view data-v-09d62415 newsBlock">
+            <image class="_image data-v-09d62415 newIcon" src="../../../static/zixun.png" mode></image>
+            <text class="_text data-v-09d62415 newsBlockText">{{newText.text}}</text>
+            <image class="_image data-v-09d62415 newImg" src="{{newText.imgUrl}}" mode></image>
+          </view>
+          <view class="_view data-v-09d62415 timeLimit">
+            <view class="_view data-v-09d62415 timeLimitHeader">
+              <view class="_view data-v-09d62415 timeLimitHeaderLeft">
+                <text class="_text data-v-09d62415 timeBorder"></text>
+                <text class="_text data-v-09d62415 textTitle">限时高佣</text>
+                <text class="_text data-v-09d62415 timeText">{{time.hour}}</text>
+                <text class="_text data-v-09d62415 timeFen">:</text>
+                <text class="_text data-v-09d62415 timeText">{{time.minute}}</text>
+                <text class="_text data-v-09d62415 timeFen">:</text>
+                <text class="_text data-v-09d62415 timeText">{{time.second}}</text>
+              </view>
+              <view class="_view data-v-09d62415 timeLimitHeaderRight" bindtap="handleProxy" data-eventid="{{'BFI-5'}}" data-comkey="{{$k}}">
+                <text class="_text data-v-09d62415">更多</text>
+                <image src="../../../static/move.png" mode class="_image data-v-09d62415"></image>
+              </view>
+            </view>
+            <view class="_view data-v-09d62415 timeLimitList">
+              <view class="_view data-v-09d62415 timeLimitListItem" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'mQP-6-'+index}}" data-comkey="{{$k}}" wx:for="{{timeLimitData.list}}" wx:for-index="index" wx:for-item="item">
+                <image src="{{item.imgUrl}}" mode class="_image data-v-09d62415"></image>
+                <text class="_text data-v-09d62415 brokerage">￥{{item.brokerage}}</text>
+                <view class="_view data-v-09d62415 priceBlock">
+                  <text class="_text data-v-09d62415 price">￥{{item.price}}</text>
+                  <text class="_text data-v-09d62415 originalPrice">￥{{item.originalPrice}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="_view data-v-09d62415 hotShopp">
+            <view class="_view data-v-09d62415 timeLimitHeader">
+              <view class="_view data-v-09d62415 timeLimitHeaderLeft">
+                <text class="_text data-v-09d62415 timeBorder"></text>
+                <text class="_text data-v-09d62415 textTitle">热卖商城</text>
+              </view>
+            </view>
+            <view class="_view data-v-09d62415 hotGoodsList">
+              <view class="_view data-v-09d62415 hotGoodsListItem" data-current="{{item.id}}" wx:key="item.id" key="{{item.id}}" bindtap="handleProxy" data-eventid="{{'bY7-7-'+index}}" data-comkey="{{$k}}" wx:for="{{hotGoodsData}}" wx:for-index="index"
+                wx:for-item="item">
+                <image src="{{item.imgUrl}}" mode class="_image data-v-09d62415"></image>
+              </view>
+            </view>
+          </view>
+          <view class="_view data-v-09d62415 recommend">
+            <view class="_view data-v-09d62415 timeLimitHeader">
+              <view class="_view data-v-09d62415 timeLimitHeaderLeft">
+                <text class="_text data-v-09d62415 timeBorder"></text>
+                <text class="_text data-v-09d62415 textTitle">热卖推荐</text>
+              </view>
+              <view class="_view data-v-09d62415 timeLimitHeaderRight">
+                <text class="_text data-v-09d62415">综合推荐</text>
+                <image class="_image data-v-09d62415 down" src="../../../static/down.png" mode></image>
+              </view>
+            </view>
+            <view class="_view data-v-09d62415 recommendList">
+              <view class="_view data-v-09d62415 recommendListItem" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'snE-8-'+index}}" data-comkey="{{$k}}" wx:for="{{recommendListData}}" wx:for-index="index" wx:for-item="item">
+                <image class="_image data-v-09d62415 recommendImg" src="{{item.imgUrl}}" mode></image>
+                <view class="_view data-v-09d62415 recommendListRight">
+                  <view class="_view data-v-09d62415 recommendListRightHeader">
+                    <text class="_text data-v-09d62415 discounts">{{item.discounts}}</text>
+                    <text class="_text data-v-09d62415 goodsName">{{item.goodsName}}</text>
+                  </view>
+                  <view class="_view data-v-09d62415 goodsIntro">
+                    <text class="_text data-v-09d62415 discountsIntro">佣金:{{item.discountsIntro}}</text>
+                    <text class="_text data-v-09d62415 sales"> 销量:{{item.sales}} </text>
+                  </view>
+                  <view class="_view data-v-09d62415 goodsPrice">
+                    <text class="_text data-v-09d62415 goodsPriceTitle">优惠:</text>
+                    <text class="_text data-v-09d62415 goodsPriceText">￥{{item.price}}</text>
+                    <text class="_text data-v-09d62415 goodsOriginalPrice">￥{{item.originalPrice}}</text>
+                    <button class="_button data-v-09d62415 lookBtn">立即查看</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="_view data-v-09d62415 goodslist">
+            <view class="_view data-v-09d62415 goodslistHeader">
+              <view class="_view data-v-09d62415 tabItems" bindtap="handleProxy" data-eventid="{{'KOQ-9'}}" data-comkey="{{$k}}">
+                <text class="_text data-v-09d62415 {{sortord === '综合排序' ? 'active' : ''}}">综合排序</text>
+              </view>
+              <view class="_view data-v-09d62415 tabItems" bindtap="handleProxy" data-eventid="{{'diC-10'}}" data-comkey="{{$k}}">
+                <text class="_text data-v-09d62415 {{sortord === '销量' ? 'active' : ''}}">销量</text>
+                <view class="_view data-v-09d62415 arrowsView">
+                  <text class="_text data-v-09d62415 {{(salesLitre === false && sortord === '销量') ? 'arrowsTop active' : 'arrowsTop'}}"></text>
+                  <text class="_text data-v-09d62415 {{(salesLitre === true && sortord === '销量')  ? 'arrowsBottom active'  : 'arrowsBottom'}}"></text>
+                </view>
+              </view>
+              <view class="_view data-v-09d62415 tabItems" bindtap="handleProxy" data-eventid="{{'vH8-11'}}" data-comkey="{{$k}}">
+                <text class="_text data-v-09d62415 {{sortord === '价格' ? 'active' : ''}}">价格</text>
+                <view class="_view data-v-09d62415 arrowsView">
+                  <text class="_text data-v-09d62415 {{(priceLitre === false && sortord === '价格') ? 'arrowsTop active' : 'arrowsTop'}}"></text>
+                  <text class="_text data-v-09d62415 {{(priceLitre === true && sortord === '价格')  ? 'arrowsBottom active'  : 'arrowsBottom'}}"></text>
+                </view>
+              </view>
+              <view class="_view data-v-09d62415 tabItems" bindtap="handleProxy" data-eventid="{{'ORD-12'}}" data-comkey="{{$k}}">
+                <text class="_text data-v-09d62415 {{sortord === '佣金' ? 'active' : ''}}">佣金</text>
+                <view class="_view data-v-09d62415 arrowsView">
+                  <text class="_text data-v-09d62415 {{(commissionLitre === false && sortord === '佣金')  ? 'arrowsTop active'  : 'arrowsTop'}}"></text>
+                  <text class="_text data-v-09d62415 {{(commissionLitre === true && sortord === '佣金')  ? 'arrowsBottom active'  : 'arrowsBottom'}}"></text>
+                </view>
+              </view>
+            </view>
+            <view class="_view data-v-09d62415 goodsListItems">
+              <view class="_view data-v-09d62415 recommendList">
+                <view class="_view data-v-09d62415 recommendListItem" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'DOO-13-'+index}}" data-comkey="{{$k}}" wx:for="{{recommendListData}}" wx:for-index="index" wx:for-item="item">
+                  <image class="_image data-v-09d62415 recommendImg" src="{{item.imgUrl}}" mode></image>
+                  <view class="_view data-v-09d62415 recommendListRight">
+                    <view class="_view data-v-09d62415 recommendListRightHeader">
+                      <text class="_text data-v-09d62415 discounts">{{item.discounts}}</text>
+                      <text class="_text data-v-09d62415 goodsName">{{item.goodsName}}</text>
+                    </view>
+                    <view class="_view data-v-09d62415 goodsIntro">
+                      <text class="_text data-v-09d62415 discountsIntro">佣金:{{item.discountsIntro}}</text>
+                      <text class="_text data-v-09d62415 sales"> 销量:{{item.sales}} </text>
+                    </view>
+                    <view class="_view data-v-09d62415 goodsPrice">
+                      <text class="_text data-v-09d62415 goodsPriceTitle">优惠:</text>
+                      <text class="_text data-v-09d62415 goodsPriceText">￥{{item.price}}</text>
+                      <text class="_text data-v-09d62415 goodsOriginalPrice">￥{{item.originalPrice}}</text>
+                      <button class="_button data-v-09d62415 lookBtn">立即查看</button>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

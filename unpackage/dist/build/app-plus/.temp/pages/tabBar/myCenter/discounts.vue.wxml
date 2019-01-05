@@ -1,0 +1,26 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="26a4d76a">
+  <view class="_view data-v-e35027ba content">
+    <view class="_view data-v-e35027ba discount">
+      <view class="_view data-v-e35027ba list" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+        <view class="_view data-v-e35027ba {{type != 1 ? 'active' : 'left'}}">
+          <text class="_text data-v-e35027ba">￥</text>
+          <text class="_text data-v-e35027ba">50</text>
+          <text class="_text data-v-e35027ba">满100可用</text>
+        </view>
+        <view class="_view data-v-e35027ba right">
+          <view class="_view data-v-e35027ba">
+            <text class="_text data-v-e35027ba">养生佳品宁夏枸杞购物券</text>
+            <text class="_text data-v-e35027ba">有效期至2019-10-10</text>
+          </view>
+          <view class="_view data-v-e35027ba img">
+            <navigator class="_navigator data-v-e35027ba has" wx:if="{{type!=1}}" url="#">立即领取</navigator>
+            <navigator class="_navigator data-v-e35027ba use" wx:else url="#">立即使用</navigator>
+            <image wx:if="{{type==1}}" src="../../../static/hasBrought.png" mode class="_image data-v-e35027ba"></image>
+          </view>
+        </view>
+      </view>
+      <template data="{{...$root['0'], ...$root[$kk+'axq-0'],$root}}" is="53a2a299"></template>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,1 @@
+<import src="/pages/healthySpace/recommend.vue.wxml" /><template is="2bcd5777" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,21 @@
+<template name="146b2d53">
+  <view class="_view data-v-e2b984e8 content">
+    <view class="_view data-v-e2b984e8 warn">
+      <image src="../../../static/warn.png" mode class="_image data-v-e2b984e8"></image>
+      <text class="_text data-v-e2b984e8">注意，本次生命果转出后无法取消，请核对好钱包地址。</text>
+    </view>
+    <view class="_view data-v-e2b984e8 title">
+      <view class="_view data-v-e2b984e8 address">
+        <text class="_text data-v-e2b984e8">钱包地址</text>
+        <text wx:if="{{address}}" class="_text data-v-e2b984e8">地址错误</text>
+        <input type="text" value="" placeholder="输入对方数据钱包地址" placeholder-class="place-holder" class="_input data-v-e2b984e8" />
+        <image src="../../../static/scanqr.png" mode bindtap="handleProxy" data-eventid="{{'vwc-0'}}" data-comkey="{{$k}}" class="_image data-v-e2b984e8"></image>
+      </view>
+      <view class="_view data-v-e2b984e8 address">
+        <text class="_text data-v-e2b984e8">生命果数量</text>
+        <input type="text" value="" placeholder="请输入转让果实个数" placeholder-class="place-holder" class="_input data-v-e2b984e8" />
+      </view>
+      <button type="default" bindtap="handleProxy" data-eventid="{{'WTW-1'}}" data-comkey="{{$k}}" class="_button data-v-e2b984e8">确认转出</button>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,55 @@
+<template name="83b77642">
+  <view class="_view data-v-05650f58 content">
+    <view class="_view data-v-05650f58 goodsDetail">
+      <view class="_view data-v-05650f58 goodsImg">
+        <image src="../../../static/photo.png" mode class="_image data-v-05650f58"></image>
+      </view>
+      <view class="_view data-v-05650f58 goodsBuy">
+        <view class="_view data-v-05650f58 left">
+          <text class="_text data-v-05650f58">精品双肩包 商务包\n</text>
+          <text class="_text data-v-05650f58">市场价: ￥666\n</text>
+          <text class="_text data-v-05650f58">{{needFruit}}</text>
+          <text class="_text data-v-05650f58">生命果</text>
+        </view>
+        <view class="_view data-v-05650f58 left right">
+          <text class="_text data-v-05650f58">剩余生命果</text>
+          <text class="_text data-v-05650f58">{{lifeFruit}}个</text>
+          <view class="_view data-v-05650f58 addNum">
+            <text class="_text data-v-05650f58">兑换</text>
+            <view class="_view data-v-05650f58 titlte">
+              <text bindtap="handleProxy" data-eventid="{{'XzW-0'}}" data-comkey="{{$k}}" class="_text data-v-05650f58">-</text>
+              <text class="_text data-v-05650f58">{{count}}</text>
+              <text bindtap="handleProxy" data-eventid="{{'oug-1'}}" data-comkey="{{$k}}" class="_text data-v-05650f58">+</text>
+            </view>
+            <text class="_text data-v-05650f58">份</text>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-05650f58 goodsInfo">
+        <text class="_text data-v-05650f58">商品详情</text>
+        <view class="_view data-v-05650f58 info">
+          <text class="_text data-v-05650f58">名称:精品双肩包\n</text>
+          <text class="_text data-v-05650f58">材质:纯棉精仿\n</text>
+          <text class="_text data-v-05650f58">重量:105g\n</text>
+          <text class="_text data-v-05650f58">颜色:黑色</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-05650f58 btn">
+      <button type="default" bindtap="handleProxy" data-eventid="{{'D4h-2'}}" data-comkey="{{$k}}" class="_button data-v-05650f58">立即兑换</button>
+    </view>
+    <view class="_view data-v-05650f58 toast" wx:if="{{toast}}">
+      <view class="_view data-v-05650f58 main">
+        <view class="_view data-v-05650f58 top">
+          <image wx:if="{{allFruit>lifeFruit}}" src="../../../static/unconvert.png" mode class="_image data-v-05650f58"></image>
+          <image wx:else src="../../../static/convert.png" mode class="_image data-v-05650f58"></image>
+          <text class="_text data-v-05650f58">{{title}}</text>
+        </view>
+        <view class="_view data-v-05650f58 bottom">
+          <text bindtap="handleProxy" data-eventid="{{'5r5-3'}}" data-comkey="{{$k}}" class="_text data-v-05650f58">确定</text>
+          <text bindtap="handleProxy" data-eventid="{{'Tvr-4'}}" data-comkey="{{$k}}" class="_text data-v-05650f58">取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

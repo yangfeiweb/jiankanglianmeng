@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/dealMarket/dealMarket.vue.wxml" /><template is="42dd0119" data="{{ ...$root['0'], $root }}"/>

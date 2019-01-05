@@ -1,0 +1,39 @@
+<template name="0dd8752c">
+  <view class="_view data-v-5b836553 content">
+    <view class="_view data-v-5b836553 top"> 验证码已发送至 </view>
+    <view class="_view data-v-5b836553 chart">
+      <view class="_view data-v-5b836553 getPhone">
+        <input type="text" placeholder-class="place-holder" placeholder="请输入图片验证码" maxlength="4" class="_input data-v-5b836553 yanzhengma_input" bindblur="handleProxy" value="{{picLyanzhengma}}" bindinput="handleProxy" data-eventid="{{'EPE-0'}}" data-comkey="{{$k}}"
+        />
+        <button type="default" class="_button data-v-5b836553 yzm" bindtap="handleProxy" data-eventid="{{'M3d-1'}}" data-comkey="{{$k}}">{{checkCode}}</button>
+      </view>
+      <view class="_view data-v-5b836553 getPhone phone">
+        <text class="_text data-v-5b836553">1589699999</text>
+        <view class="_view data-v-5b836553 getcode" wx:if="{{show}}" bindtap="handleProxy" data-eventid="{{'Y8A-2'}}" data-comkey="{{$k}}">获取验证码</view>
+        <view class="_view data-v-5b836553 getcode1" wx:else>{{count}}s</view>
+      </view>
+      <view class="_view data-v-5b836553 getPhone">
+        <input placeholder-class="place-holder" type="text" maxlength="6" value="{{code}}" bindinput="handleProxy" placeholder="请输入短信验证码" data-eventid="{{'csP-3'}}" data-comkey="{{$k}}" class="_input data-v-5b836553" />
+      </view>
+      <view class="_view data-v-5b836553 getPhone">
+        <input placeholder-class="place-holder" wx:if="{{havePwd}}" type="password" value="{{pwd}}" bindinput="handleProxy" placeholder="请设置登录密码" data-eventid="{{'907-4'}}" data-comkey="{{$k}}" class="_input data-v-5b836553" />
+        <input placeholder-class="place-holder" wx:if="{{!havePwd}}" type="text" value="{{pwd}}" bindinput="handleProxy" placeholder="请设置登录密码" data-eventid="{{'BOa-5'}}" data-comkey="{{$k}}" class="_input data-v-5b836553" />
+        <view class="_view data-v-5b836553 pwdEye">
+          <image class="_image data-v-5b836553 eyeImg" src="../../../static/eyeLook1.png" wx:if="{{havePwd}}" bindtap="handleProxy" data-eventid="{{'FAR-6'}}" data-comkey="{{$k}}"></image>
+          <image class="_image data-v-5b836553 eyeImg" src="../../../static/eyeUnlook.png" wx:if="{{!havePwd}}" bindtap="handleProxy" data-eventid="{{'HJb-7'}}" data-comkey="{{$k}}"></image>
+        </view>
+      </view>
+      <view class="_view data-v-5b836553 getPhone">
+        <input placeholder-class="place-holder" wx:if="{{havePwd1}}" type="password" value="{{pwd1}}" bindinput="handleProxy" placeholder="确认密码" data-eventid="{{'MN6-8'}}" data-comkey="{{$k}}" class="_input data-v-5b836553" />
+        <input placeholder-class="place-holder" wx:if="{{!havePwd1}}" type="text" value="{{pwd1}}" bindinput="handleProxy" placeholder="确认密码" data-eventid="{{'Qqu-9'}}" data-comkey="{{$k}}" class="_input data-v-5b836553" />
+        <view class="_view data-v-5b836553 pwdEye">
+          <image class="_image data-v-5b836553 eyeImg" src="../../../static/eyeLook1.png" wx:if="{{havePwd1}}" bindtap="handleProxy" data-eventid="{{'4AS-10'}}" data-comkey="{{$k}}"></image>
+          <image class="_image data-v-5b836553 eyeImg" src="../../../static/eyeUnlook.png" wx:if="{{!havePwd1}}" bindtap="handleProxy" data-eventid="{{'GlH-11'}}" data-comkey="{{$k}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-5b836553 submits">
+      <button type="default" bindtap="handleProxy" data-eventid="{{'HcS-12'}}" data-comkey="{{$k}}" class="_button data-v-5b836553">提交</button>
+    </view>
+  </view>
+</template>

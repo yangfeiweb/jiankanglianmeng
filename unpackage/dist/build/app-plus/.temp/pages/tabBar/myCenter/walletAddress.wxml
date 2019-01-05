@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/myCenter/walletAddress.vue.wxml" /><template is="146b2d53" data="{{ ...$root['0'], $root }}"/>

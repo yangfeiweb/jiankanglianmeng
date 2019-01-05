@@ -1,0 +1,1 @@
+<import src="/pages/tabBar/myCenter/loginPwd.vue.wxml" /><template is="0dd8752c" data="{{ ...$root['0'], $root }}"/>

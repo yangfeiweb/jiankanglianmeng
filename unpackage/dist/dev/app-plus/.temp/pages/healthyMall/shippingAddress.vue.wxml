@@ -1,0 +1,27 @@
+<template name="41cf0d46">
+  <view class="_view data-v-9cb69b36 index">
+    <view class="_view data-v-9cb69b36 siteView">
+      <view class="_view data-v-9cb69b36 siteViewItem" wx:key="index" key="{{index}}" wx:for="{{siteData}}" wx:for-index="index" wx:for-item="item">
+        <label class="_label data-v-9cb69b36 radio">
+          <radio color="#87BBF8" value="{{item.id}}" checked="{{item.checked===0?true:false}}" bindtap="handleProxy" data-eventid="{{'XSE-0-'+index}}" data-comkey="{{$k}}" class="_radio data-v-9cb69b36" />
+        </label>
+        <view class="_view data-v-9cb69b36 siteDefalut">
+          <view class="_view data-v-9cb69b36 siteInfoTop">
+            <text class="_text data-v-9cb69b36 siteName">{{item.name}}</text>
+            <text class="_text data-v-9cb69b36 siteTel">{{item.tel}}</text>
+            <text class="_text data-v-9cb69b36 defalutbtn" hidden="{{!(item.checked===0?true:false)}}">默认地址</text>
+          </view>
+          <text class="_text data-v-9cb69b36 siteDefinite"> {{item.prov+item.citiy+item.count+item.definite}} </text>
+        </view>
+        <view class="_view data-v-9cb69b36 imgView">
+          <image class="_image data-v-9cb69b36 complieIcon" bindtap="handleProxy" src="../../static/compile_icon.png" mode data-eventid="{{'AUt-1-'+index}}" data-comkey="{{$k}}"></image>
+          <text class="_text data-v-9cb69b36 imgViewBorder"></text>
+          <image class="_image data-v-9cb69b36 deteleIocn" bindtap="handleProxy" src="../../static/delete_icon.png" mode data-eventid="{{'JUt-2-'+index}}" data-comkey="{{$k}}"></image>
+        </view>
+      </view>
+      <view class="_view data-v-9cb69b36 addSiteView">
+        <text class="_text data-v-9cb69b36 addSite" bindtap="handleProxy" data-eventid="{{'RWp-3'}}" data-comkey="{{$k}}">新增收货地址</text>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,55 @@
+<template name="77097d70">
+  <view class="_view data-v-9f09f4f8 content">
+    <view class="_view data-v-9f09f4f8 list">
+      <view class="_view data-v-9f09f4f8 phone">
+        <text class="_text data-v-9f09f4f8">当前账号</text>
+        <navigator class="_navigator data-v-9f09f4f8">
+          <text class="_text data-v-9f09f4f8">15899999999</text>
+          <image src="../../static/rightArrow.png" mode class="_image data-v-9f09f4f8"></image>
+        </navigator>
+      </view>
+      <view class="_view data-v-9f09f4f8 phone">
+        <text class="_text data-v-9f09f4f8">微信绑定</text>
+        <navigator url="bindWx" class="_navigator data-v-9f09f4f8">
+          <text class="_text data-v-9f09f4f8">已绑定</text>
+          <image src="../../static/rightArrow.png" mode class="_image data-v-9f09f4f8"></image>
+        </navigator>
+      </view>
+    </view>
+    <view class="_view data-v-9f09f4f8 list">
+      <view class="_view data-v-9f09f4f8 phone">
+        <text class="_text data-v-9f09f4f8">提现账户</text>
+        <navigator url="withDrawUser" class="_navigator data-v-9f09f4f8">
+          <text class="_text data-v-9f09f4f8">未设置</text>
+          <image src="../../static/rightArrow.png" mode class="_image data-v-9f09f4f8"></image>
+        </navigator>
+      </view>
+      <view class="_view data-v-9f09f4f8 phone">
+        <text class="_text data-v-9f09f4f8">登录密码</text>
+        <navigator url="../tabBar/myCenter/loginPwd" class="_navigator data-v-9f09f4f8">
+          <text class="_text data-v-9f09f4f8">未设置</text>
+          <image src="../../static/rightArrow.png" mode class="_image data-v-9f09f4f8"></image>
+        </navigator>
+      </view>
+      <view class="_view data-v-9f09f4f8 phone">
+        <text class="_text data-v-9f09f4f8">支付密码</text>
+        <navigator url="../tabBar/myCenter/rank" class="_navigator data-v-9f09f4f8">
+          <text class="_text data-v-9f09f4f8">未设置</text>
+          <image src="../../static/rightArrow.png" mode class="_image data-v-9f09f4f8"></image>
+        </navigator>
+      </view>
+    </view>
+    <view class="_view data-v-9f09f4f8 list">
+      <view class="_view data-v-9f09f4f8 phone">
+        <text class="_text data-v-9f09f4f8">版本更新</text>
+        <navigator url="system" class="_navigator data-v-9f09f4f8">
+          <text class="_text data-v-9f09f4f8">1.0</text>
+          <image src="../../static/rightArrow.png" mode class="_image data-v-9f09f4f8"></image>
+        </navigator>
+      </view>
+      <view class="_view data-v-9f09f4f8 btn">
+        <button type="default" class="_button data-v-9f09f4f8">退出登录</button>
+      </view>
+    </view>
+  </view>
+</template>

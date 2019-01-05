@@ -1,0 +1,57 @@
+<import src="/components/load-more.vue.wxml" />
+<template name="00b8849e">
+  <view class="_view data-v-3a496732 content">
+    <view class="_view data-v-3a496732 top">
+      <view class="_view data-v-3a496732 tTop">
+        <view class="_view data-v-3a496732 left">
+          <text class="_text data-v-3a496732">6666</text>
+          <text class="_text data-v-3a496732">(体力)\n</text>
+          <text class="_text data-v-3a496732">+20%产出增益</text>
+        </view>
+        <view class="_view data-v-3a496732 right">
+          <image src="../../../static/photo.png" mode class="_image data-v-3a496732"></image>
+          <text class="_text data-v-3a496732">MyName</text>
+        </view>
+      </view>
+      <view class="_view data-v-3a496732 tTitle">
+        <view class="_view data-v-3a496732 left">
+          <image src="../../../static/temp.png" mode class="_image data-v-3a496732"></image>
+          <text class="_text data-v-3a496732">增加体力</text>
+        </view>
+        <view class="_view data-v-3a496732 right">
+          <image src="../../../static/hoof.png" mode class="_image data-v-3a496732"></image>
+          <text class="_text data-v-3a496732">生命果</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-3a496732 recordList">
+      <view class="_view data-v-3a496732 clear">
+        <text class="_text data-v-3a496732">体力记录</text>
+        <text class="_text data-v-3a496732">清除记录</text>
+      </view>
+      <view class="_view data-v-3a496732 listPower">
+        <view class="_view data-v-3a496732 options">
+          <text class="_text data-v-3a496732">类型</text>
+          <text class="_text data-v-3a496732">时间</text>
+          <text class="_text data-v-3a496732">数量</text>
+        </view>
+        <view class="_view data-v-3a496732 scroll-view">
+          <view class="_view data-v-3a496732 listP" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="value">
+            <view class="_view data-v-3a496732">
+              <image src="../../../static/up.png" mode class="_image data-v-3a496732"></image>
+              <text class="_text data-v-3a496732">每日签到</text>
+            </view>
+            <view class="_view data-v-3a496732">
+              <text class="_text data-v-3a496732">9/12</text>
+            </view>
+            <view class="_view data-v-3a496732">
+              <text class="_text data-v-3a496732">+24</text>
+              <text class="_text data-v-3a496732">限时体力</text>
+            </view>
+          </view>
+          <template data="{{...$root['0'], ...$root[$kk+'vaB-0'],$root}}" is="53a2a299"></template>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

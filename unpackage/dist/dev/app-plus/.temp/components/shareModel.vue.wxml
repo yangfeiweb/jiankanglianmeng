@@ -1,0 +1,14 @@
+<template name="2d7791ac">
+  <view class="_view data-v-af64beaa shareModel">
+    <view class="_view data-v-af64beaa shareMask" hidden="{{!(maskShow)}}" bindtap="handleProxy" data-eventid="{{'eTu-0'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-af64beaa sharePopup" hidden="{{!(popupShow)}}">
+      <view class="_view data-v-af64beaa shareList">
+        <view bindtap="handleProxy" class="_view data-v-af64beaa shareItem" wx:key="index" key="{{index}}" data-eventid="{{'kld-1-'+index}}" data-comkey="{{$k}}" wx:for="{{providerList}}" wx:for-index="index" wx:for-item="item">
+          <image src="{{item.imgUrl}}" mode class="_image data-v-af64beaa"></image>
+          <text class="_text data-v-af64beaa shareName">{{item.name}}</text>
+        </view>
+      </view>
+      <text class="_text data-v-af64beaa cancel" bindtap="handleProxy" data-eventid="{{'jp8-2'}}" data-comkey="{{$k}}">取消</text>
+    </view>
+  </view>
+</template>

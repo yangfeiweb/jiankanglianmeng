@@ -1,0 +1,67 @@
+<template name="7ae23333">
+  <view class="_view data-v-3a819494 content">
+    <view class="_view data-v-3a819494 wrapper">
+      <image src="../../../static/jumpMap.png" class="_image data-v-3a819494 box"></image>
+      <image src="../../../static/jumpMap.png" class="_image data-v-3a819494 box"></image>
+      <image src="../../../static/jumpMap.png" class="_image data-v-3a819494 box"></image>
+    </view>
+    <image class="_image data-v-3a819494 img" src="../../../static/loginBg.jpg" mode></image>
+    <view class="_view data-v-3a819494 lTop">
+      <navigator url="../register/register" class="_navigator data-v-3a819494">注册</navigator>
+    </view>
+    <view class="_view data-v-3a819494 login">
+      <view wx:if="{{type==1}}" class="_view data-v-3a819494 lMiddle">
+        <view class="_view data-v-3a819494 phone">
+          <image src="../../../static/user.png" mode class="_image data-v-3a819494"></image>
+          <input placeholder-class="place-holder" type="text" maxlength="11" value="{{phone}}" bindinput="handleProxy" placeholder="请输入手机号" data-eventid="{{'IPu-0'}}" data-comkey="{{$k}}" class="_input data-v-3a819494" />
+          <image wx:if="{{phone!=''}}" src="../../../static/del.png" mode bindtap="handleProxy" data-eventid="{{'rzc-1'}}" data-comkey="{{$k}}" class="_image data-v-3a819494"></image>
+        </view>
+        <view class="_view data-v-3a819494 phone">
+          <image src="../../../static/pwd.png" mode class="_image data-v-3a819494"></image>
+          <input placeholder-class="place-holder" type="text" maxlength="6" value="{{code}}" bindinput="handleProxy" placeholder="请输入验证码" data-eventid="{{'P31-2'}}" data-comkey="{{$k}}" class="_input data-v-3a819494" />
+          <view class="_view data-v-3a819494 getcode" wx:if="{{show}}" bindtap="handleProxy" data-eventid="{{'KvQ-3'}}" data-comkey="{{$k}}">获取验证码</view>
+          <view class="_view data-v-3a819494 getcode" wx:else>{{count}}s后重新发送</view>
+        </view>
+        <view class="_view data-v-3a819494 btn">
+          <button class="_button data-v-3a819494 btn1" type="primary" bindtap="handleProxy" data-eventid="{{'4Lj-4'}}" data-comkey="{{$k}}">登录</button>
+        </view>
+        <view class="_view data-v-3a819494 deal">
+          <image src="../../../static/select.png" mode class="_image data-v-3a819494"></image>
+          <view class="_view data-v-3a819494"> 阅读并同意
+            <navigator url="../../myCenter/serviceTitle" class="_navigator data-v-3a819494">《用户服务协议》</navigator> 和
+            <navigator url="../../myCenter/privacyUser" class="_navigator data-v-3a819494">《用户隐私政策》</navigator>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{type!=1}}" class="_view data-v-3a819494 lMiddle">
+        <view class="_view data-v-3a819494 phone">
+          <image src="../../../static/user.png" mode class="_image data-v-3a819494"></image>
+          <input placeholder-class="place-holder" type="text" maxlength="11" value="{{user}}" bindinput="handleProxy" placeholder="手机号/账号" data-eventid="{{'EVq-5'}}" data-comkey="{{$k}}" class="_input data-v-3a819494" />
+          <image wx:if="{{user!=''}}" src="../../../static/del.png" mode bindtap="handleProxy" data-eventid="{{'mXc-6'}}" data-comkey="{{$k}}" class="_image data-v-3a819494"></image>
+        </view>
+        <view class="_view data-v-3a819494 phone">
+          <image src="../../../static/code.png" mode class="_image data-v-3a819494"></image>
+          <input placeholder-class="place-holder" wx:if="{{havePwd}}" type="password" value="{{pwd}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'JhE-7'}}" data-comkey="{{$k}}" class="_input data-v-3a819494" />
+          <input placeholder-class="place-holder" wx:if="{{!havePwd}}" type="text" value="{{pwd}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'wUI-8'}}" data-comkey="{{$k}}" class="_input data-v-3a819494" />
+          <image class="_image data-v-3a819494 eyeImg" src="../../../static/eyeLook.png" wx:if="{{havePwd}}" bindtap="handleProxy" data-eventid="{{'glu-9'}}" data-comkey="{{$k}}"></image>
+          <image class="_image data-v-3a819494 eyeImg" src="../../../static/eyeUnlook.png" wx:if="{{!havePwd}}" bindtap="handleProxy" data-eventid="{{'Ihs-10'}}" data-comkey="{{$k}}"></image>
+        </view>
+        <view class="_view data-v-3a819494 btn">
+          <button class="_button data-v-3a819494 btn1" type="primary" bindtap="handleProxy" data-eventid="{{'PWu-11'}}" data-comkey="{{$k}}">登录</button>
+        </view>
+        <view class="_view data-v-3a819494 deal">
+          <image src="../../../static/select.png" mode class="_image data-v-3a819494"></image>
+          <view class="_view data-v-3a819494"> 阅读并同意
+            <navigator url class="_navigator data-v-3a819494">《用户服务协议》</navigator> 和
+            <navigator url="#" class="_navigator data-v-3a819494">《用户隐私政策》</navigator>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-3a819494 threeLogin">
+        <image src="../../../static/wx.png" mode class="_image data-v-3a819494"></image>
+        <image src="../../../static/phone.png" mode bindtap="handleProxy" data-eventid="{{'QtT-12'}}" data-comkey="{{$k}}" class="_image data-v-3a819494"></image>
+        <image src="../../../static/ali.png" mode class="_image data-v-3a819494"></image>
+      </view>
+    </view>
+  </view>
+</template>
